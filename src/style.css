@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+body {
+	height: 10000px;
+	font-family: "Raleway", sans-serif;
+}
+
+@utility centered-container {
+	@apply container mx-auto px-3;
+}
+
+@utility my-transition {
+	@apply transition-all duration-300;
+}
+
+@utility praimary-bg-color {
+	@apply bg-cyan-300;
+}
+
+@utility praimary-color {
+	@apply text-cyan-300;
+}
+
+@utility flex-between {
+	@apply flex justify-between items-center;
+}
+
+@utility centered-background {
+	@apply bg-center bg-cover;
+}
