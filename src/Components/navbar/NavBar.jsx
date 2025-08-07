@@ -13,7 +13,7 @@ export default function NavBar() {
 		setIsToggled((isToggled) => !isToggled);
 	}
 	return (
-		<nav className="fixed w-full top-0 left-0 bg-black py-5">
+		<nav className="fixed w-full top-0 left-0 bg-black py-5 z-10">
 			<section className="relative">
 				<ScrollProgress />
 				<section className="centered-container">
