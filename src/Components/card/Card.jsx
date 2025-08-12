@@ -1,3 +1,3 @@
 export default function Card({ children }) {
-	return <section className=" ">{children}</section>;
+	return <section className="bg-amber-600 ">{children}</section>;
 }

@@ -1,6 +1,7 @@
 import "./style.css";
 import NavBar from "./Components/navbar/NavBar.jsx";
 import { Header } from "./sections/header/Header.jsx";
+import Services from "./sections/services/Services.jsx";
 
 function App() {
 	return (
@@ -8,6 +9,7 @@ function App() {
 			<Header>
 				<NavBar />
 			</Header>
+			<Services />
 		</main>
 	);
 }
