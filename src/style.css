@@ -3,6 +3,7 @@
 body {
 	height: 10000px;
 	font-family: "Raleway", sans-serif;
+	background-color: black;
 }
 
 @utility centered-container {
@@ -27,4 +28,8 @@ body {
 
 @utility centered-background {
 	@apply bg-center bg-cover;
+}
+
+@utility grid-container {
+	@apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4;
 }

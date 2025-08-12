@@ -1,3 +1,7 @@
 export default function Card({ children }) {
-	return <section className="bg-amber-600 ">{children}</section>;
+	return (
+		<section className="flex flex-col rounded-[10px] relative">
+			{children}
+		</section>
+	);
 }
