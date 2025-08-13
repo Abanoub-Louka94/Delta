@@ -13,6 +13,7 @@ import {
 	path,
 	buttonIcon,
 } from "./services-js/services";
+import { Children } from "react";
 
 export default function Services() {
 	return (
@@ -24,8 +25,8 @@ export default function Services() {
 						<section className="absolute top-[20px] right-[20px]">
 							<Icon path={path.path_1} />
 						</section>
-						<section className="p-6">
-							<section className="mb-4">
+						<section className="p-6 flex flex-col">
+							<section className="mb-4 xl:mb-9 2xl:mb-4">
 								<CardDescrip
 									title={titles.title_1}
 									descrip={description.de_1}
@@ -45,8 +46,8 @@ export default function Services() {
 						<section className="absolute top-[20px] right-[20px]">
 							<Icon path={path.path_2} />
 						</section>
-						<section className="p-6">
-							<section className="mb-4">
+						<section className="p-6 flex flex-col">
+							<section className="mb-4 xl:mb-9 2xl:mb-4">
 								<CardDescrip
 									title={titles.title_2}
 									descrip={description.de_2}
@@ -66,8 +67,8 @@ export default function Services() {
 						<section className="absolute top-[20px] right-[20px]">
 							<Icon path={path.path_2} />
 						</section>
-						<section className="p-6">
-							<section className="mb-10">
+						<section className="p-6 flex flex-col">
+							<section className="mb-4 lg:mb-9 2xl:mb-4">
 								<CardDescrip
 									title={titles.title_3}
 									descrip={description.de_3}
@@ -82,14 +83,13 @@ export default function Services() {
 							</section>
 						</section>
 					</Card>
-
 					<Card>
 						<CardBanner image={images.banner_4} />
 						<section className="absolute top-[20px] right-[20px]">
 							<Icon path={path.path_4} />
 						</section>
-						<section className="p-6">
-							<section className="mb-4">
+						<section className="p-6 flex flex-col">
+							<section className="mb-4 ">
 								<CardDescrip
 									title={titles.title_4}
 									descrip={description.de_4}
