@@ -1,8 +1,8 @@
 export const images = {
-	banner_1: "url(/src/assets/card/card-banner/1.jpeg)",
-	banner_2: "url(/src/assets/card/card-banner/2.jpeg)",
-	banner_3: "url(/src/assets/card/card-banner/3.jpeg)",
-	banner_4: "url(/src/assets/card/card-banner/4.jpeg)",
+	banner_1: "bg-[url(/src/assets/card/card-banner/1.jpeg)]",
+	banner_2: "bg-[url(/src/assets/card/card-banner/2.jpeg)]",
+	banner_3: "bg-[url(/src/assets/card/card-banner/3.jpeg)]",
+	banner_4: "bg-[url(/src/assets/card/card-banner/4.jpeg)]",
 };
 
 export const titles = {

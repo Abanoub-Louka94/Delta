@@ -1,6 +1,6 @@
 export default function List({ list }) {
 	return (
-		<ul className="flex flex-wrap px-6 gap-4">
+		<ul className="flex flex-wrap gap-4 mb-3">
 			{list.map((item) => (
 				<ListItem item={item} key={item} />
 			))}
