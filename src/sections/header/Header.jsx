@@ -1,3 +1,5 @@
+import StatsCard from "../../Components/stats-card/StatsCard";
+
 export function Header({ children }) {
 	return (
 		<header className="h-screen bg-[url(/src/assets/header/header.jpeg)] centered-background relative">
@@ -22,6 +24,10 @@ export function Header({ children }) {
 							bespoke furniture manufacturing that transforms your vision into
 							timeless pieces of art
 						</p>
+					</section>
+
+					<section className="flex flex-wrap justify-between">
+						<StatsCard></StatsCard>
 					</section>
 				</section>
 			</section>

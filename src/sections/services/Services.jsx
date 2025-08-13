@@ -25,7 +25,7 @@ export default function Services() {
 						<section className="absolute top-[20px] right-[20px]">
 							<Icon path={path.path_1} />
 						</section>
-						<section className="p-6 flex flex-col">
+						<section className="p-6">
 							<section className="mb-4 xl:mb-9 2xl:mb-4">
 								<CardDescrip
 									title={titles.title_1}
@@ -46,7 +46,7 @@ export default function Services() {
 						<section className="absolute top-[20px] right-[20px]">
 							<Icon path={path.path_2} />
 						</section>
-						<section className="p-6 flex flex-col">
+						<section className="p-6">
 							<section className="mb-4 xl:mb-9 2xl:mb-4">
 								<CardDescrip
 									title={titles.title_2}
@@ -67,7 +67,7 @@ export default function Services() {
 						<section className="absolute top-[20px] right-[20px]">
 							<Icon path={path.path_2} />
 						</section>
-						<section className="p-6 flex flex-col">
+						<section className="p-6">
 							<section className="mb-4 lg:mb-9 2xl:mb-4">
 								<CardDescrip
 									title={titles.title_3}
@@ -88,7 +88,7 @@ export default function Services() {
 						<section className="absolute top-[20px] right-[20px]">
 							<Icon path={path.path_4} />
 						</section>
-						<section className="p-6 flex flex-col">
+						<section className="p-6">
 							<section className="mb-4 ">
 								<CardDescrip
 									title={titles.title_4}

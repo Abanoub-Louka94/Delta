@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 body {
-	height: 10000px;
 	font-family: "Raleway", sans-serif;
 	background-color: black;
 }
