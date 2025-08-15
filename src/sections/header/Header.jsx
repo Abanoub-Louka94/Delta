@@ -1,5 +1,6 @@
-import StatsCard from "../../Components/stats-card/StatsCard";
-
+import Card from "../../Components/card/Card";
+import Icon from "../../Components/icon/Icon";
+import { path } from "../header/header-js/header";
 export function Header({ children }) {
 	return (
 		<header className="h-screen bg-[url(/src/assets/header/header.jpeg)] centered-background relative">
@@ -26,8 +27,40 @@ export function Header({ children }) {
 						</p>
 					</section>
 
-					<section className="flex flex-wrap justify-between">
-						<StatsCard></StatsCard>
+					<section className="flex flex-wrap justify-between w-2/4">
+						<Card>
+							<section className="column-flex py-6">
+								<section>
+									<Icon path={path.path_1} />
+								</section>
+								<section>
+									<span className="block">test</span>
+									<span className="block">test</span>
+								</section>
+							</section>
+						</Card>
+						<Card>
+							<section className="column-flex py-6">
+								<section>
+									<Icon path={path.path_1} />
+								</section>
+								<section>
+									<span className="block">test</span>
+									<span className="block">test</span>
+								</section>
+							</section>
+						</Card>
+						<Card>
+							<section className="column-flex py-6">
+								<section>
+									<Icon path={path.path_1} />
+								</section>
+								<section>
+									<span className="block">test</span>
+									<span className="block">test</span>
+								</section>
+							</section>
+						</Card>
 					</section>
 				</section>
 			</section>

@@ -4,9 +4,6 @@ export default function MobileLinks() {
 	return (
 		<motion.ul
 			className="w-full bg-black top-[60px] left-0 absolute md:hidden"
-			variants={{
-				visible: { transition: { staggerChildren: 1 } },
-			}}
 			initial={{ opacity: 0, height: 0 }}
 			animate={{ opacity: 1, height: "auto" }}
 			exit={{ opacity: 0, height: 0 }}
