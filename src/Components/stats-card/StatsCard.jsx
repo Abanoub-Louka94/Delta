@@ -1,3 +1,3 @@
 export default function StatsCard({ children }) {
-	return <section className="column-flex">{children}</section>;
+	return <section className="column-flex items-center">{children}</section>;
 }

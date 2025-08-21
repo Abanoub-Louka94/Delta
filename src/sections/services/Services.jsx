@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
-import CardDescrip from "../../Components/card/card-descrip/CardDescrip";
+import CardDescrip from "../../Components/card-descrip/CardDescrip";
 import Card from "../../Components/card/Card";
-import CardBanner from "../../Components/card/card-banner/CardBanner";
+import CardBanner from "../../Components/card-banner/CardBanner";
 import Icon from "../../Components/icon/Icon";
 import List from "../../Components/card/list/List";
 import Button from "../../Components/button/Button";
@@ -27,8 +27,8 @@ export default function Services() {
 					>
 						<Card>
 							<CardBanner image={images.banner_1} />
-							<section className="absolute top-[20px] right-[20px]">
-								<Icon path={path.path_1} />
+							<section className="absolute top-[20px] right-[20px] flex w-fit rounded-full praimary-bg-color justify-center items-center p-2 ">
+								<Icon path={path.path_1} color={path.color} />
 							</section>
 							<section className="p-6">
 								<section className="mb-4 xl:mb-9 2xl:mb-4">
@@ -57,8 +57,8 @@ export default function Services() {
 					>
 						<Card>
 							<CardBanner image={images.banner_2} />
-							<section className="absolute top-[20px] right-[20px]">
-								<Icon path={path.path_2} />
+							<section className="absolute top-[20px] right-[20px] flex w-fit rounded-full praimary-bg-color justify-center items-center p-2 ">
+								<Icon path={path.path_2} color={path.color} />
 							</section>
 							<section className="p-6">
 								<section className="mb-4 xl:mb-9 2xl:mb-4">
@@ -87,8 +87,8 @@ export default function Services() {
 					>
 						<Card>
 							<CardBanner image={images.banner_3} />
-							<section className="absolute top-[20px] right-[20px]">
-								<Icon path={path.path_2} />
+							<section className="absolute top-[20px] right-[20px] flex w-fit rounded-full praimary-bg-color justify-center items-center p-2 ">
+								<Icon path={path.path_2} color={path.color} />
 							</section>
 							<section className="p-6">
 								<section className="mb-4 lg:mb-9 2xl:mb-4">
@@ -117,8 +117,8 @@ export default function Services() {
 					>
 						<Card>
 							<CardBanner image={images.banner_4} />
-							<section className="absolute top-[20px] right-[20px]">
-								<Icon path={path.path_4} />
+							<section className="absolute top-[20px] right-[20px] flex w-fit rounded-full praimary-bg-color justify-center items-center p-2 ">
+								<Icon path={path.path_4} color={path.color} />
 							</section>
 							<section className="p-6">
 								<section className="mb-4 ">
