@@ -1,3 +1,4 @@
+import Button from "../../Components/button/Button";
 import StatsCard from "../../Components/stats-card/StatsCard";
 import Icon from "../../Components/icon/Icon";
 import { path } from "../header/header-js/header";
@@ -26,7 +27,14 @@ export function Header({ children }) {
 							timeless pieces of art
 						</p>
 					</section>
-
+					<section>
+						<section className=" praimary-bg-color px-10 py-5">
+							<Button>
+								<Icon path={path.path_4} color={path.color_black} />
+								<span className="font-semibold">Get a Qute</span>
+							</Button>
+						</section>
+					</section>
 					<section className="grid grid-cols-1 md:grid-cols-3 w-3xl gap-y-4">
 						<StatsCard>
 							<section className="w-16 h-16 bg-gradient-to-br from-[#04D9C4]/20 to-[#04BFAD]/20 rounded-full flex items-center justify-center mb-4 border border-[#04D9C4]/30 group-hover:border-[#04D9C4]/60 transition-colors duration-300">

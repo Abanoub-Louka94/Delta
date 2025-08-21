@@ -5,14 +5,13 @@ import CardBanner from "../../Components/card-banner/CardBanner";
 import Icon from "../../Components/icon/Icon";
 import List from "../../Components/card/list/List";
 import Button from "../../Components/button/Button";
-import ButtonIcon from "../../Components/button/button-icon/ButtonIcon";
+
 import {
 	images,
 	description,
 	titles,
 	lists,
 	path,
-	buttonIcon,
 } from "./services-js/services";
 
 export default function Services() {
@@ -28,7 +27,7 @@ export default function Services() {
 						<Card>
 							<CardBanner image={images.banner_1} />
 							<section className="absolute top-[20px] right-[20px] flex w-fit rounded-full praimary-bg-color justify-center items-center p-2 ">
-								<Icon path={path.path_1} color={path.color} />
+								<Icon path={path.path_1} color={path.color_white} />
 							</section>
 							<section className="p-6">
 								<section className="mb-4 xl:mb-9 2xl:mb-4">
@@ -41,10 +40,7 @@ export default function Services() {
 								<section className="rounded-[10px] praimary-bg-color py-2">
 									<Button>
 										<span className="capitalize">view more</span>
-										<ButtonIcon
-											icon={buttonIcon.icon}
-											color={buttonIcon.color}
-										/>
+										<Icon path={path.path_5} color={path.color_black} />
 									</Button>
 								</section>
 							</section>
@@ -58,7 +54,7 @@ export default function Services() {
 						<Card>
 							<CardBanner image={images.banner_2} />
 							<section className="absolute top-[20px] right-[20px] flex w-fit rounded-full praimary-bg-color justify-center items-center p-2 ">
-								<Icon path={path.path_2} color={path.color} />
+								<Icon path={path.path_2} color={path.color_white} />
 							</section>
 							<section className="p-6">
 								<section className="mb-4 xl:mb-9 2xl:mb-4">
@@ -71,10 +67,7 @@ export default function Services() {
 								<section className="rounded-[10px] praimary-bg-color py-2">
 									<Button>
 										<span className="capitalize">view more</span>
-										<ButtonIcon
-											icon={buttonIcon.icon}
-											color={buttonIcon.color}
-										/>
+										<Icon path={path.path_5} color={path.color_black} />
 									</Button>
 								</section>
 							</section>
@@ -88,7 +81,7 @@ export default function Services() {
 						<Card>
 							<CardBanner image={images.banner_3} />
 							<section className="absolute top-[20px] right-[20px] flex w-fit rounded-full praimary-bg-color justify-center items-center p-2 ">
-								<Icon path={path.path_2} color={path.color} />
+								<Icon path={path.path_2} color={path.color_white} />
 							</section>
 							<section className="p-6">
 								<section className="mb-4 lg:mb-9 2xl:mb-4">
@@ -101,10 +94,7 @@ export default function Services() {
 								<section className="rounded-[10px] praimary-bg-color py-2">
 									<Button>
 										<span className="capitalize">view more</span>
-										<ButtonIcon
-											icon={buttonIcon.icon}
-											color={buttonIcon.color}
-										/>
+										<Icon path={path.path_5} color={path.color_black} />
 									</Button>
 								</section>
 							</section>
@@ -118,7 +108,7 @@ export default function Services() {
 						<Card>
 							<CardBanner image={images.banner_4} />
 							<section className="absolute top-[20px] right-[20px] flex w-fit rounded-full praimary-bg-color justify-center items-center p-2 ">
-								<Icon path={path.path_4} color={path.color} />
+								<Icon path={path.path_4} color={path.color_white} />
 							</section>
 							<section className="p-6">
 								<section className="mb-4 ">
@@ -132,10 +122,7 @@ export default function Services() {
 								<section className="rounded-[10px] praimary-bg-color py-2">
 									<Button>
 										<span className="capitalize">view more</span>
-										<ButtonIcon
-											icon={buttonIcon.icon}
-											color={buttonIcon.color}
-										/>
+										<Icon path={path.path_5} color={path.color_black} />
 									</Button>
 								</section>
 							</section>
