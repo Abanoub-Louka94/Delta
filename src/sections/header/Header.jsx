@@ -4,7 +4,7 @@ import Icon from "../../Components/icon/Icon";
 import { path } from "../header/header-js/header";
 export function Header({ children }) {
 	return (
-		<header className="h-screen overflow-x-hidden bg-[url(/src/assets/header/header.jpeg)] centered-background relative">
+		<header className="h-screen bg-[url(/src/assets/header/header.jpeg)] centered-background relative">
 			<section className="absolute translate-x-[-50%] translate-y-[-50%] left-[50%] bottom-7">
 				<span className="block uppercase text-white text-xs tracking-[2px]">
 					scroll
@@ -41,7 +41,7 @@ export function Header({ children }) {
 							</Button>
 						</section>
 					</section>
-					<section className="mt-12 grid grid-cols-1 md:grid-cols-3 w-3xl gap-y-4">
+					<section className="mt-12 grid grid-cols-1 md:grid-cols-3 w-[60%] gap-y-4">
 						<StatsCard>
 							<section className="w-16 h-16 bg-gradient-to-br from-[#04D9C4]/20 to-[#04BFAD]/20 rounded-full flex items-center justify-center mb-4 border border-[#04D9C4]/30 group-hover:border-[#04D9C4]/60 transition-colors duration-300">
 								<Icon path={path.path_1} color={path.color} />
