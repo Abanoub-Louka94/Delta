@@ -47,7 +47,7 @@ function List({ name }) {
 			className="w-[90%] mx-auto"
 		>
 			<a
-				className="block capitalize text-white py-3 my-transition hover:praimary-color"
+				className="block capitalize text-white py-3 my-transition hover:primary-color"
 				href="#"
 			>
 				{name}

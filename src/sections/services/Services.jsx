@@ -21,17 +21,17 @@ export default function Services() {
 		<section className="py-20 bg-gradient-to-br from-[#04D9C4]/10 via-transparent to-[#04BFAD]/10">
 			<section className="centered-container">
 				<Intro title={intro.title} description={intro.description}>
-					<section className="rounded-full  mb-6 px-6 py-3 w-fit mx-auto bg-cyan-300/10 border border-cyan-300/20">
+					<section className="rounded-full mb-6 px-6 py-3 w-fit mx-auto bg-cyan-300/10 border border-cyan-300/20">
 						<Button>
 							<Icon path={path.path_6} color={path.color_primary} />
-							<span className="capitalize praimary-color">
+							<span className="capitalize primary-color">
 								{intro.butt_title}
 							</span>
 							<Icon path={path.path_7} color={path.color_primary} />
 						</Button>
 					</section>
 				</Intro>
-				<section className="cards grid-container gap-x-6 gap-y-10">
+				<section className="grid-container gap-x-6 gap-y-10">
 					<motion.section
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
@@ -39,7 +39,7 @@ export default function Services() {
 					>
 						<Card>
 							<CardBanner image={images.banner_1} />
-							<section className="absolute top-[20px] right-[20px] flex w-fit rounded-full praimary-bg-color justify-center items-center p-2 ">
+							<section className="absolute top-[20px] right-[20px] flex w-fit rounded-full primary-bg-color justify-center items-center p-2">
 								<Icon path={path.path_1} color={path.color_white} />
 							</section>
 							<section className="p-6">
@@ -50,7 +50,7 @@ export default function Services() {
 									/>
 								</section>
 								<List list={lists.list_1} />
-								<section className="rounded-[10px] praimary-bg-color py-2">
+								<section className="rounded-[10px] primary-bg-color py-2">
 									<Button>
 										<span className="capitalize">view more</span>
 										<Icon path={path.path_5} color={path.color_black} />
@@ -66,7 +66,7 @@ export default function Services() {
 					>
 						<Card>
 							<CardBanner image={images.banner_2} />
-							<section className="absolute top-[20px] right-[20px] flex w-fit rounded-full praimary-bg-color justify-center items-center p-2 ">
+							<section className="absolute top-[20px] right-[20px] flex w-fit rounded-full primary-bg-color justify-center items-center p-2 ">
 								<Icon path={path.path_2} color={path.color_white} />
 							</section>
 							<section className="p-6">
@@ -77,7 +77,7 @@ export default function Services() {
 									/>
 								</section>
 								<List list={lists.list_2} />
-								<section className="rounded-[10px] praimary-bg-color py-2">
+								<section className="rounded-[10px] primary-bg-color py-2">
 									<Button>
 										<span className="capitalize">view more</span>
 										<Icon path={path.path_5} color={path.color_black} />
@@ -93,7 +93,7 @@ export default function Services() {
 					>
 						<Card>
 							<CardBanner image={images.banner_3} />
-							<section className="absolute top-[20px] right-[20px] flex w-fit rounded-full praimary-bg-color justify-center items-center p-2 ">
+							<section className="absolute top-[20px] right-[20px] flex w-fit rounded-full primary-bg-color justify-center items-center p-2 ">
 								<Icon path={path.path_2} color={path.color_white} />
 							</section>
 							<section className="p-6">
@@ -104,7 +104,7 @@ export default function Services() {
 									/>
 								</section>
 								<List list={lists.list_3} />
-								<section className="rounded-[10px] praimary-bg-color py-2">
+								<section className="rounded-[10px] primary-bg-color py-2">
 									<Button>
 										<span className="capitalize">view more</span>
 										<Icon path={path.path_5} color={path.color_black} />
@@ -120,7 +120,7 @@ export default function Services() {
 					>
 						<Card>
 							<CardBanner image={images.banner_4} />
-							<section className="absolute top-[20px] right-[20px] flex w-fit rounded-full praimary-bg-color justify-center items-center p-2 ">
+							<section className="absolute top-[20px] right-[20px] flex w-fit rounded-full primary-bg-color justify-center items-center p-2 ">
 								<Icon path={path.path_4} color={path.color_white} />
 							</section>
 							<section className="p-6">
@@ -132,7 +132,7 @@ export default function Services() {
 								</section>
 
 								<List list={lists.list_4} />
-								<section className="rounded-[10px] praimary-bg-color py-2">
+								<section className="rounded-[10px] primary-bg-color py-2">
 									<Button>
 										<span className="capitalize">view more</span>
 										<Icon path={path.path_5} color={path.color_black} />
@@ -141,6 +141,14 @@ export default function Services() {
 							</section>
 						</Card>
 					</motion.section>
+				</section>
+				<section className=" border-2 border-cyan-300 px-8 py-2 w-fit mx-auto mt-16">
+					<Button>
+						<span className="capitalize primary-color text-sm">
+							explore all services
+						</span>
+						<Icon path={path.path_5} color={path.color_primary} />
+					</Button>
 				</section>
 			</section>
 		</section>

@@ -14,10 +14,10 @@ export default function DeskTopLinks() {
 function List({ name }) {
 	return (
 		<li className="relative group">
-			<a className="capitalize text-white group-hover:praimary-color" href="#">
+			<a className="capitalize text-white group-hover:primary-color" href="#">
 				{name}
 			</a>
-			<span className="absolute left-0 w-0 my-transition bottom-[-4px] h-[2px] praimary-bg-color group-hover:w-full"></span>
+			<span className="absolute left-0 w-0 my-transition bottom-[-4px] h-[2px] primary-bg-color group-hover:w-full"></span>
 		</li>
 	);
 }

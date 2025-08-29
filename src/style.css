@@ -1,5 +1,18 @@
 @import "tailwindcss";
 
+@theme {
+	--animate-wiggle: wiggle 1.5s linear infinite;
+	@keyframes wiggle {
+		0%,
+		100% {
+			transform: rotate(-5deg);
+		}
+		50% {
+			transform: rotate(5deg);
+		}
+	}
+}
+
 body {
 	font-family: "Raleway", sans-serif;
 	background-color: black;
@@ -13,11 +26,11 @@ body {
 	@apply transition-all duration-300;
 }
 
-@utility praimary-bg-color {
+@utility primary-bg-color {
 	@apply bg-cyan-300;
 }
 
-@utility praimary-color {
+@utility primary-color {
 	@apply text-cyan-300;
 }
 

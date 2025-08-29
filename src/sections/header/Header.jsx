@@ -15,14 +15,14 @@ export function Header({ children }) {
 				{children}
 				<section className="w-[70%] h-[80%] md:h-[70%] text-center flex flex-col items-center md:gap-y-10">
 					<section className="mb-4 sm:mb-6">
-						<span className="text-sm md:text-base praimary-color tracking-[3px] uppercase w-fit py-3 px-6 rounded-full block bg-cyan-500/30 backdrop-blur-sm ">
+						<span className="text-sm md:text-base primary-color tracking-[3px] uppercase w-fit py-3 px-6 rounded-full block bg-cyan-500/30 backdrop-blur-sm ">
 							dubai's premier furniture atelier
 						</span>
 					</section>
 					<section className="mb-6">
 						<h1 className="text-2xl sm:text-4xl md:text-6xl">
 							<span className="block text-white capitalize">where luxury</span>
-							<span className="block praimary-color capitalize">
+							<span className="block primary-color capitalize">
 								meets craftsmanship
 							</span>
 						</h1>
@@ -34,7 +34,7 @@ export function Header({ children }) {
 						</p>
 					</section>
 					<section>
-						<section className="praimary-bg-color px-10 py-5 shadow-lg shadow-[#04D9C4]/25">
+						<section className="primary-bg-color px-10 py-5 shadow-lg shadow-[#04D9C4]/25">
 							<Button>
 								<Icon path={path.path_4} color={path.color_black} />
 								<span className="font-semibold">Get a Qute</span>
@@ -47,7 +47,7 @@ export function Header({ children }) {
 								<Icon path={path.path_1} color={path.color} />
 							</section>
 							<section>
-								<span className="block praimary-color font-bold text-2xl mb-1">
+								<span className="block primary-color font-bold text-2xl mb-1">
 									5+
 								</span>
 								<span className="block text-white text-[12px] capitalize">
@@ -60,7 +60,7 @@ export function Header({ children }) {
 								<Icon path={path.path_2} color={path.color} />
 							</section>
 							<section>
-								<span className="block praimary-color font-bold text-2xl mb-1">
+								<span className="block primary-color font-bold text-2xl mb-1">
 									500+
 								</span>
 								<span className="block text-white text-[12px] capitalize">
@@ -73,7 +73,7 @@ export function Header({ children }) {
 								<Icon path={path.path_3} color={path.color} />
 							</section>
 							<section>
-								<span className="block praimary-color font-bold text-2xl mb-1">
+								<span className="block primary-color font-bold text-2xl mb-1">
 									1000+
 								</span>
 								<span className="block text-white text-[12px] capitalize">

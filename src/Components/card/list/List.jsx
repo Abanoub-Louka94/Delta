@@ -10,7 +10,7 @@ export default function List({ list }) {
 
 function ListItem({ item }) {
 	return (
-		<li className="w-fit text-[13px] border rounded-full px-2 py-1 p-1 praimary-color nth-of-type-3:text-white">
+		<li className="w-fit text-[13px] border rounded-full px-2 py-1 p-1 primary-color nth-of-type-3:text-white">
 			{item}
 		</li>
 	);
