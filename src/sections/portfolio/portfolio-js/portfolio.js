@@ -1,8 +1,12 @@
 export const intro = {
-	title: "dubai's premier choice",
+	title_1: "dubai's premier choice",
+	title_2: "our core strengths",
+
 	butt_title: "premium services",
-	description:
+	description_1:
 		"Discover what sets Delta Furniture apart from competitors like Al Intisar Décor, Koala Furniture, and Al Subaiha Furniture",
+	description_2:
+		"Three pillars that define our excellence in luxury furniture manufacturing",
 };
 
 export const path = {
@@ -14,6 +18,10 @@ export const path = {
 		"M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z",
 	path_4:
 		"M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z",
+	path_5:
+		"M120-120v-560h240v-80l120-120 120 120v240h240v400H120Zm80-80h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm240 320h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm240 480h80v-80h-80v80Zm0-160h80v-80h-80v80Z",
+	path_6:
+		"M578-80q-17 0-28.5-11.5T538-120q0-17 11.5-28.5T578-160h113l-92-65q-14-10-16.5-25.5T589-280q9-14 25-16.5t30 6.5l93 64-39-106q-6-15 1-30t23-21q16-6 31 1t21 23l38 106 30-109q5-16 18.5-24.5T890-390q16 5 25 18.5t4 29.5L849-80H578Zm-378-80q-33 0-56.5-23.5T120-240v-480q0-33 23.5-56.5T200-800h40v-80h80v80h240v-80h80v80h40q33 0 56.5 23.5T760-720v244q-20-3-40-3t-40 3v-84H200v320h280q0 20 3 40t11 40H200Zm0-480h480v-80H200v80Zm0 0v-80 80Z",
 	color_white: "#D9D9D9",
 	color_black: "#000",
 	color_primary: "#53eafd",

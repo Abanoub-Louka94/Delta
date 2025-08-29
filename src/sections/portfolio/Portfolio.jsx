@@ -2,6 +2,7 @@ import Intro from "../../Components/section-intro/Intro";
 import Button from "../../Components/button/Button";
 import Icon from "../../Components/icon/Icon";
 import StatsCard from "../../Components/stats-card/StatsCard";
+import Card from "../../Components/card/Card";
 import { motion } from "motion/react";
 import { intro, path, images } from "./portfolio-js/portfolio";
 import FullBanner from "../../Components/card-full-banner/FullBanner";
@@ -10,7 +11,7 @@ export default function Portfolio() {
 	return (
 		<section className="py-20">
 			<section className="centered-container">
-				<Intro title={intro.title} description={intro.description}>
+				<Intro title={intro.title_1} description={intro.description_1}>
 					<section className="rounded-full mb-6 px-6 py-3 w-fit mx-auto bg-cyan-300/10 border border-cyan-300/20">
 						<Button>
 							<Icon path={path.path_1} color={path.color_primary} />
@@ -47,7 +48,7 @@ export default function Portfolio() {
 						</span>
 					</StatsCard>
 				</section>
-				<section className="grid grid-cols-1 lg:grid-cols-2 mb-20 gap-16">
+				<section className="grid grid-cols-1 xl:grid-cols-2 mb-20 gap-16">
 					<section className="relative h-[500px] overflow-hidden rounded-[10px]">
 						<FullBanner image={images.banner} />
 						<motion.span
@@ -86,7 +87,7 @@ export default function Portfolio() {
 								solutions that exceed expectations every time.
 							</p>
 						</section>
-						<section className="grid grid-cols-1 md:grid-cols-2 mt-12">
+						<section className="grid grid-cols-1 md:grid-cols-2 mt-12 gap-6 mb-20">
 							<PortfolioCard>
 								<section className="flex gap-x-5 mb-4">
 									<section className=" flex w-12 h-12  rounded-full primary-bg-color justify-center items-center">
@@ -114,6 +115,46 @@ export default function Portfolio() {
 									</Button>
 								</section>
 							</PortfolioCard>
+							<PortfolioCard>
+								<section className="flex gap-x-5 mb-4">
+									<section className=" flex w-12 h-12  rounded-full primary-bg-color justify-center items-center">
+										<Icon path={path.path_5} color={path.color_white} />
+									</section>
+									<section>
+										<h4 className="text-lg primary-color mb-1 capitalize">
+											b2C leadership
+										</h4>
+										<span className="text-white text-xs block capitalize">
+											commercial & volume orders
+										</span>
+									</section>
+								</section>
+								<p className="text-white text-sm mb-4 leading-relaxed capitalize">
+									trusted by dubai's leading businesses for large-scale
+									furniture projects.
+								</p>
+								<section className="rounded-[10px] border border-cyan-300  py-2 ">
+									<Button>
+										<Icon path={path.path_6} color={path.color_primary} />
+										<span className="capitalize primary-color">
+											schedule work
+										</span>
+									</Button>
+								</section>
+							</PortfolioCard>
+						</section>
+					</section>
+				</section>
+				<section>
+					<section className="centered-container">
+						<Intro
+							title={intro.title_2}
+							description={intro.description_2}
+						></Intro>
+						<section className="grid-container">
+							<Card>
+								<section className="rounded-[10px] group relative bg-[#1a1a1a]  p-8 hover:bg-[#2a2a2a]"></section>
+							</Card>
 						</section>
 					</section>
 				</section>
