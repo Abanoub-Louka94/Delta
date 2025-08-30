@@ -23,7 +23,7 @@ body {
 }
 
 @utility my-transition {
-	@apply transition-all duration-300;
+	@apply transition-all duration-500;
 }
 
 @utility primary-bg-color {

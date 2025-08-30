@@ -151,9 +151,60 @@ export default function Portfolio() {
 							title={intro.title_2}
 							description={intro.description_2}
 						></Intro>
-						<section className="grid-container">
+						<section className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 							<Card>
-								<section className="rounded-[10px] group relative bg-[#1a1a1a]  p-8 hover:bg-[#2a2a2a]"></section>
+								<section className="rounded-[10px] group relative bg-[#1a1a1a]  p-8 flex flex-col justify-center items-center">
+									<section className=" flex w-14 h-14  rounded-full primary-bg-color justify-center items-center mb-4">
+										<Icon path={path.path_7} color={path.color_white} />
+									</section>
+									<section className="text-white text-center">
+										<h5 className="capitalize mb-5 group-hover:primary-color my-transition">
+											expertise
+										</h5>
+										<p className="text-sm leading-relaxed">
+											Expertise Over 50 years of specialized knowledge in luxury
+											furniture manufacturing, with master craftsmen who
+											understand the nuances of premium materials and
+											traditional techniques.
+										</p>
+									</section>
+								</section>
+							</Card>
+							<Card>
+								<section className="rounded-[10px] group relative bg-[#1a1a1a]  p-8  flex flex-col justify-center items-center">
+									<section className=" flex w-14 h-14  rounded-full primary-bg-color justify-center items-center mb-4">
+										<Icon path={path.path_8} color={path.color_white} />
+									</section>
+									<section className="text-white text-center">
+										<h5 className="capitalize mb-5 group-hover:primary-color my-transition">
+											expertise
+										</h5>
+										<p className="text-sm leading-relaxed">
+											Expertise Over 50 years of specialized knowledge in luxury
+											furniture manufacturing, with master craftsmen who
+											understand the nuances of premium materials and
+											traditional techniques.
+										</p>
+									</section>
+								</section>
+							</Card>
+							<Card>
+								<section className="rounded-[10px] group relative bg-[#1a1a1a]  p-8  flex flex-col justify-center items-center">
+									<section className=" flex w-14 h-14  rounded-full primary-bg-color justify-center items-center mb-4">
+										<Icon path={path.path_9} color={path.color_white} />
+									</section>
+									<section className="text-white text-center">
+										<h5 className="capitalize mb-5 group-hover:primary-color my-transition">
+											expertise
+										</h5>
+										<p className="text-sm leading-relaxed">
+											Expertise Over 50 years of specialized knowledge in luxury
+											furniture manufacturing, with master craftsmen who
+											understand the nuances of premium materials and
+											traditional techniques.
+										</p>
+									</section>
+								</section>
 							</Card>
 						</section>
 					</section>
