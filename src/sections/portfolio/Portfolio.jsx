@@ -9,7 +9,7 @@ import FullBanner from "../../Components/card-full-banner/FullBanner";
 import PortfolioCard from "../../Components/portfolio-card/PortfolioCard";
 export default function Portfolio() {
 	return (
-		<section className="py-20">
+		<section id="portfolio" className="py-20">
 			<section className="centered-container">
 				<Intro title={intro.title_1} description={intro.description_1}>
 					<section className="rounded-full mb-6 px-6 py-3 w-fit mx-auto bg-cyan-300/10 border border-cyan-300/20">
@@ -129,7 +129,7 @@ export default function Portfolio() {
 										</span>
 									</section>
 								</section>
-								<p className="text-white text-sm mb-4 leading-relaxed capitalize">
+								<p className="text-white text-sm mb-4 xl:mb-10 leading-relaxed capitalize">
 									trusted by dubai's leading businesses for large-scale
 									furniture projects.
 								</p>
@@ -171,7 +171,7 @@ export default function Portfolio() {
 								</section>
 							</Card>
 							<Card>
-								<section className="rounded-[10px] group relative bg-[#1a1a1a]  p-8  flex flex-col justify-center items-center">
+								<section className="rounded-[10px] group bg-[#1a1a1a]  p-8  flex flex-col justify-center items-center">
 									<section className=" flex w-14 h-14  rounded-full primary-bg-color justify-center items-center mb-4">
 										<Icon path={path.path_8} color={path.color_white} />
 									</section>
