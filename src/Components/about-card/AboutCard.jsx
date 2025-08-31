@@ -10,7 +10,7 @@ export default function AboutCard({
 	return (
 		<section className="flex flex-col md:flex-row justify-center gap-4 mb-10">
 			<section className="icon mx-auto md:mx-0">
-				<section className="rounded-full p-2 border border-[#04D9C4]/30 w-fit group hover:scale-125 my-transition">
+				<section className="rounded-full p-2 border border-[#04D9C4]/30 w-fit group hover:scale-110 my-transition">
 					<section className="w-16 h-16 bg-gradient-to-br from-[#04D9C4]/20 to-[#04BFAD]/20 rounded-full flex items-center justify-center  border border-[#04D9C4]/30 group-hover:bg-cyan-300/30 group-hover:border-[#04D9C4]/60 my-transition">
 						<Icon path={path} color={color} />
 					</section>

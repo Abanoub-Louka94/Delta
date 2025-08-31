@@ -18,7 +18,10 @@ import Intro from "../../Components/section-intro/Intro";
 
 export default function Services() {
 	return (
-		<section className="py-20 bg-gradient-to-br from-[#04D9C4]/10 via-transparent to-[#04BFAD]/10">
+		<section
+			id="services"
+			className="py-20 bg-gradient-to-br from-[#04D9C4]/10 via-transparent to-[#04BFAD]/10"
+		>
 			<section className="centered-container">
 				<Intro title={intro.title} description={intro.description}>
 					<section className="rounded-full mb-6 px-6 py-3 w-fit mx-auto bg-cyan-300/10 border border-cyan-300/20">
