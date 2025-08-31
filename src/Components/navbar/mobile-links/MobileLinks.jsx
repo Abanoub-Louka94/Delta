@@ -8,6 +8,7 @@ const container = {
 		height: "auto",
 		exit: { opacity: 0, height: 0 },
 		transition: {
+			type: "spring",
 			staggerChildren: 0.2, // Delay between each child animation
 		},
 	},
@@ -31,7 +32,6 @@ export default function MobileLinks() {
 				<motion.li
 					className="w-[90%] mx-auto"
 					key={links}
-					link={links}
 					variants={item}
 					transition={{ type: "tween" }}
 				>

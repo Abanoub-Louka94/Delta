@@ -2,7 +2,8 @@ import Button from "../../Components/button/Button";
 import Intro from "../../Components/section-intro/Intro";
 import Icon from "../../Components/icon/Icon";
 
-import { intro, path } from "./about-js/about";
+import { intro, path, cards } from "./about-js/about";
+import AboutCard from "../../Components/about-card/AboutCard";
 
 export default function About() {
 	return (
@@ -20,23 +21,27 @@ export default function About() {
 				</Intro>
 				<section className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
 					<section>
-						<section className="flex flex-col md:flex-row mb-10">
-							<section>
-								<section className="rounded-full p-2 border border-[#04D9C4]/30">
-									<section className="w-16 h-16 bg-gradient-to-br from-[#04D9C4]/20 to-[#04BFAD]/20 rounded-full flex items-center justify-center  border border-[#04D9C4]/30 hover:border-[#04D9C4]/60 my-transition">
-										<Icon path={path.path_2} color={path.color_primary} />
-									</section>
-								</section>
-							</section>
-							<section>
-								<p className="text-white">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-									ipsa aut corporis rerum cupiditate. Quos optio reiciendis
-									eligendi, saepe rem aliquid dolorum autem, inventore, fugit
-									quod laborum iste voluptate perferendis.
-								</p>
-							</section>
-						</section>
+						<AboutCard
+							path={path.path_2}
+							color={path.color_primary}
+							title={cards.card_1.title}
+							title_2={cards.card_1.title_2}
+							description={cards.card_1.description}
+						/>
+						<AboutCard
+							path={path.path_3}
+							color={path.color_primary}
+							title={cards.card_2.title}
+							title_2={cards.card_2.title_2}
+							description={cards.card_2.description}
+						/>
+						<AboutCard
+							path={path.path_4}
+							color={path.color_primary}
+							title={cards.card_3.title}
+							title_2={cards.card_3.title_2}
+							description={cards.card_3.description}
+						/>
 					</section>
 					<section></section>
 				</section>
