@@ -43,7 +43,9 @@ export default function About() {
 							description={cards.card_3.description}
 						/>
 					</section>
-					<section></section>
+					<section>
+                        
+                    </section>
 				</section>
 			</section>
 		</section>
