@@ -11,6 +11,26 @@
 			transform: rotate(5deg);
 		}
 	}
+
+	--animate-shadow-pulse: shadow-pulse 1.5s ease-out infinite;
+	@keyframes shadow-pulse {
+		0% {
+			box-shadow: 0 0 0 0 rgba(83, 234, 253, 0.7),
+				0 0 0 0 rgba(83, 234, 253, 0.7);
+		}
+		40% {
+			box-shadow: 0 0 0 30px rgba(83, 234, 253, 0),
+				0 0 0 0 rgba(83, 234, 253, 0.7);
+		}
+		80% {
+			box-shadow: 0 0 0 30px rgba(83, 234, 253, 0),
+				0 0 0 20px rgba(83, 234, 253, 0);
+		}
+		100% {
+			box-shadow: 0 0 0 0 rgba(255, 109, 74, 0),
+				0 0 0 20px rgba(83, 234, 253, 0);
+		}
+	}
 }
 
 body {

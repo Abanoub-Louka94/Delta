@@ -6,7 +6,6 @@ import { intro, path } from "./contact-us-js/contact";
 import Form from "../../Components/form/form";
 import Social from "../../Components/social-icon/Social";
 import ContactCards from "../../Components/contact-cards/ContactCards";
-import Card from "../../Components/card/Card";
 
 export default function Contact() {
 	return (
