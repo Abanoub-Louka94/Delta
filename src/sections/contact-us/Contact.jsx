@@ -6,6 +6,7 @@ import { intro, path } from "./contact-us-js/contact";
 import Form from "../../Components/form/form";
 import Social from "../../Components/social-icon/Social";
 import ContactCards from "../../Components/contact-cards/ContactCards";
+import Card from "../../Components/card/Card";
 
 export default function Contact() {
 	return (
@@ -39,6 +40,18 @@ export default function Contact() {
 							get in touch
 						</h3>
 						<ContactCards />
+						<section>
+							<section className="bg-[#1a1a1a] rounded-lg p-6 h-64 gap-3 column-flex items-center border border-cyan-300/10 hover:border-cyan-300/30 hover:scale-103 my-transition">
+								<Icon path={path.path_2} color={path.color_primary} />
+
+								<h3 className="capitalize text-white">
+									interactive map coming soon
+								</h3>
+								<p className="text-white/70 text-xs">
+									Al Quoz Industrial Area, Dubai
+								</p>
+							</section>
+						</section>
 					</section>
 				</section>
 			</section>
