@@ -1,19 +1,22 @@
+import NavBar from "../../Components/navbar/NavBar";
 import Button from "../../Components/button/Button";
 import StatsCard from "../../Components/stats-card/StatsCard";
 import Icon from "../../Components/icon/Icon";
 import { path } from "../header/header-js/header";
-export function Header({ children }) {
+export function Header() {
 	return (
 		<header className="h-screen relative">
 			<section className="bg w-full h-full bg-[url(/src/assets/header/header.jpeg)] centered-background">
-				<section className="absolute translate-x-[-50%] translate-y-[-50%] left-[50%] bottom-7">
+				<section className="animate-bounce absolute translate-x-[-50%] translate-y-[-50%] left-[50%] bottom-7 flex items-center column-flex">
 					<span className="block uppercase text-white text-xs tracking-[2px]">
 						scroll
 					</span>
-					<span className="block"></span>
+					<span className="block">
+						<Icon path={path.path_6} color={path.color_white} />
+					</span>
 				</section>
 				<section className="w-full h-screen bg-gradient-to-b from-black/50 via-black/30 to-black/80 flex justify-center items-center">
-					{children}
+					<NavBar />
 					<section className="w-[70%] h-[80%] md:h-[70%] text-center flex flex-col items-center md:gap-y-10">
 						<section className="mb-4 sm:mb-6">
 							<span className="text-sm md:text-base primary-color tracking-[3px] uppercase w-fit py-3 px-6 rounded-full block bg-cyan-500/30 backdrop-blur-sm ">

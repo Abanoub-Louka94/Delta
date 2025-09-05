@@ -1,6 +1,5 @@
 export const intro = {
 	title: "contact us",
-
 	butt_title: "get in touch",
 	description:
 		"Ready to transform your space? Get in touch with our team of expert craftsmen",

@@ -5,6 +5,7 @@ import Footer from "../../Components/footer/Footer";
 import { intro, path } from "./contact-us-js/contact";
 import Form from "../../Components/form/form";
 import Social from "../../Components/social-icon/Social";
+import ContactCards from "../../Components/contact-cards/ContactCards";
 
 export default function Contact() {
 	return (
@@ -34,8 +35,10 @@ export default function Contact() {
 						</section>
 					</section>
 					<section>
-						<h3 className="capitalize primary-color text-2xl">get in touch</h3>
-						<section></section>
+						<h3 className="capitalize primary-color text-2xl mb-6">
+							get in touch
+						</h3>
+						<ContactCards />
 					</section>
 				</section>
 			</section>
