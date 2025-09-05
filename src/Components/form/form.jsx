@@ -8,7 +8,7 @@ export default function Form() {
 		"textile sourcing",
 	];
 	return (
-		<section>
+		<section className="mb-5">
 			<form>
 				<section className="grid grid-cols-1 md:grid-cols-2 gap-6">
 					<section>
@@ -56,7 +56,7 @@ export default function Form() {
 							className="w-full px-4 py-3 bg-[#2a2a2a] border border-[#333] rounded-lg text-white placeholder-[#888] focus:border-cyan-300 outline-none  my-transition"
 						>
 							{options.map((option) => (
-								<option>{option}</option>
+								<option key={option}>{option}</option>
 							))}
 						</select>
 					</section>

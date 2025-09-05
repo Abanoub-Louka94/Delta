@@ -4,6 +4,7 @@ import Icon from "../../Components/icon/Icon";
 import Footer from "../../Components/footer/Footer";
 import { intro, path } from "./contact-us-js/contact";
 import Form from "../../Components/form/form";
+import Social from "../../Components/social-icon/Social";
 
 export default function Contact() {
 	return (
@@ -25,6 +26,16 @@ export default function Contact() {
 							send us a meesage
 						</h3>
 						<Form />
+						<section className="rounded-[10px] border primary-bg-color  py-2 ">
+							<Button>
+								<Social path={path.telegram} />
+								<span className="capitalize ">schedule work</span>
+							</Button>
+						</section>
+					</section>
+					<section>
+						<h3 className="capitalize primary-color text-2xl">get in touch</h3>
+						<section></section>
 					</section>
 				</section>
 			</section>
