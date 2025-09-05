@@ -1,8 +1,9 @@
 import Button from "../../Components/button/Button";
 import Intro from "../../Components/section-intro/Intro";
 import Icon from "../../Components/icon/Icon";
-import { intro, path } from "./contact-us-js/contact";
 import Footer from "../../Components/footer/Footer";
+import { intro, path } from "./contact-us-js/contact";
+import Form from "../../Components/form/form";
 
 export default function Contact() {
 	return (
@@ -18,6 +19,14 @@ export default function Contact() {
 						</Button>
 					</section>
 				</Intro>
+				<section className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 mt-16">
+					<section className="bg-[#1a1a1a] rounded-2xl p-8 border border-cyan-300/10">
+						<h3 className="capitalize primary-color text-2xl mb-6">
+							send us a meesage
+						</h3>
+						<Form />
+					</section>
+				</section>
 			</section>
 			<Footer />
 		</section>
