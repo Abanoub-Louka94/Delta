@@ -3,7 +3,7 @@ import Button from "../../Components/button/Button";
 import StatsCard from "../../Components/stats-card/StatsCard";
 import Icon from "../../Components/icon/Icon";
 import { path } from "../header/header-js/header";
-export function Header() {
+export default function Header() {
 	return (
 		<header className="h-screen relative">
 			<section className="bg w-full h-full bg-[url(/src/assets/header/header.jpeg)] centered-background">
@@ -49,7 +49,7 @@ export function Header() {
 						</section>
 						<section className="mt-12 grid grid-cols-1 md:grid-cols-3 w-[60%] gap-y-4">
 							<StatsCard>
-								<section className="w-16 h-16 animate-[shadow-pulse_5s_ease-out_infinite]  bg-gradient-to-br from-[#04D9C4]/20 to-[#04BFAD]/20 rounded-full flex items-center justify-center mb-4 border border-[#04D9C4]/30 group-hover:border-[#04D9C4]/60 transition-colors duration-300">
+								<section className="w-16 h-16 animate-[shadow-pulse_5s_ease-out_0.5s_infinite]  bg-gradient-to-br from-[#04D9C4]/20 to-[#04BFAD]/20 rounded-full flex items-center justify-center mb-4 border border-[#04D9C4]/30 group-hover:border-[#04D9C4]/60 transition-colors duration-300">
 									<Icon path={path.path_1} color={path.color} />
 								</section>
 								<section>
@@ -62,7 +62,7 @@ export function Header() {
 								</section>
 							</StatsCard>
 							<StatsCard>
-								<section className="w-16 h-16 animate-[shadow-pulse_5s_ease-out_2s_infinite] bg-gradient-to-br from-[#04D9C4]/20 to-[#04BFAD]/20 rounded-full flex items-center justify-center mb-4 border border-[#04D9C4]/30 group-hover:border-[#04D9C4]/60 transition-colors duration-300">
+								<section className="w-16 h-16 animate-[shadow-pulse_5s_ease-out_1s_infinite] bg-gradient-to-br from-[#04D9C4]/20 to-[#04BFAD]/20 rounded-full flex items-center justify-center mb-4 border border-[#04D9C4]/30 group-hover:border-[#04D9C4]/60 transition-colors duration-300">
 									<Icon path={path.path_2} color={path.color} />
 								</section>
 								<section>
@@ -75,7 +75,7 @@ export function Header() {
 								</section>
 							</StatsCard>
 							<StatsCard>
-								<section className="w-16 h-16 animate-[shadow-pulse_5s_ease-out_3s_infinite] bg-gradient-to-br from-[#04D9C4]/20 to-[#04BFAD]/20 rounded-full flex items-center justify-center mb-4 border border-[#04D9C4]/30 group-hover:border-[#04D9C4]/60 transition-colors duration-300">
+								<section className="w-16 h-16 animate-[shadow-pulse_5s_ease-out_2s_infinite] bg-gradient-to-br from-[#04D9C4]/20 to-[#04BFAD]/20 rounded-full flex items-center justify-center mb-4 border border-[#04D9C4]/30 group-hover:border-[#04D9C4]/60 transition-colors duration-300">
 									<Icon path={path.path_3} color={path.color} />
 								</section>
 								<section>

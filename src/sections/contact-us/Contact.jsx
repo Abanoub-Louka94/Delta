@@ -1,7 +1,6 @@
 import Button from "../../Components/button/Button";
 import Intro from "../../Components/section-intro/Intro";
 import Icon from "../../Components/icon/Icon";
-import Footer from "../../Components/footer/Footer";
 import { intro, path } from "./contact-us-js/contact";
 import Form from "../../Components/form/form";
 import Social from "../../Components/social-icon/Social";
@@ -54,7 +53,6 @@ export default function Contact() {
 					</section>
 				</section>
 			</section>
-			<Footer />
 		</section>
 	);
 }
