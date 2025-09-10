@@ -28,7 +28,7 @@ export default function Contact() {
 						<Form />
 						<section className="rounded-[10px] border primary-bg-color  py-2 ">
 							<Button>
-								<Social path={path.telegram} />
+								<Social path={path.telegram} color={path.color_black} />
 								<span className="capitalize ">schedule work</span>
 							</Button>
 						</section>

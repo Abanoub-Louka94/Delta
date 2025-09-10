@@ -1,4 +1,4 @@
-export default function Social({ path }) {
+export default function Social({ path, color }) {
 	return (
 		<svg
 			width="24px"
@@ -7,7 +7,7 @@ export default function Social({ path }) {
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"
 		>
-			<path stroke="#000000" stroke-width="12" d={path} />
+			<path stroke={color} stroke-width="12" d={path} />
 		</svg>
 	);
 }

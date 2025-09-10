@@ -3,7 +3,7 @@ export default function FooterList({ list }) {
 		<section>
 			<ul className="flex flex-col gap-y-2.5">
 				{list.map((list) => (
-					<li className="relative group w-fit">
+					<li className="relative group w-fit" key={list}>
 						<a href="#" className="capitalize text-white text-sm ">
 							{list}
 						</a>

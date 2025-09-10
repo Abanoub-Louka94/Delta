@@ -1,6 +1,13 @@
-import { cards, servicesList, companyList } from "./footer-js/footer";
+import {
+	cards,
+	servicesList,
+	companyList,
+	socialList,
+} from "./footer-js/footer";
 import FooterCard from "../footer-card/FooterCard";
 import FooterList from "../footer-list/FooterList";
+import FooterForm from "../footer-form/footerForm";
+import SocialLinks from "../social-links/SocialLinks";
 
 export default function Footer() {
 	return (
@@ -33,6 +40,10 @@ export default function Footer() {
 						<section>
 							<h3 className="capitalize text-white text-xl mb-6">company</h3>
 							<FooterList list={companyList} />
+							<img
+								src="../../assets/footer/social/twitter-svgrepo-com.png"
+								alt=""
+							/>
 						</section>
 						<section>
 							<section className="mb-4">
@@ -44,12 +55,20 @@ export default function Footer() {
 									and exclusive offers.
 								</p>
 							</section>
-							<section></section>
-							<section></section>
+							<section className="mb-6">
+								<FooterForm />
+							</section>
+							<section>
+								<SocialLinks social={socialList} />
+							</section>
 						</section>
 					</section>
 				</section>
-				<section className="mt-20 border-t-cyan-300/70"></section>
+				<section className="mt-20 border-t-cyan-300/70 px-6">
+					<section className="centered-container">
+						<section className="column-flex"></section>
+					</section>
+				</section>
 			</section>
 		</section>
 	);

@@ -35,3 +35,10 @@ export const companyList = [
 	"careers",
 	"contact us",
 ];
+
+export const socialList = [
+	"/src/assets/footer/social/facebook-svgrepo-com.png",
+	"/src/assets/footer/social/instagram-svgrepo-com.png",
+	"/src/assets/footer/social/linkedin-svgrepo-com.png",
+	"/src/assets/footer/social/twitter-svgrepo-com.png",
+];
