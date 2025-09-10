@@ -7,10 +7,12 @@ export default function FooterCard({ card }) {
 			</section>
 
 			<section>
-				<span className="capitalize text-white block font-medium">
+				<span className="capitalize text-sm text-white block font-medium">
 					{card.title}
 				</span>
-				<span className="text-white/60 text-sm block">{card.info}</span>
+				<span className="capitalize text-white/60 text-xs block">
+					{card.info}
+				</span>
 			</section>
 		</section>
 	);
