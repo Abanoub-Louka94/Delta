@@ -8,6 +8,7 @@ import FooterCard from "../footer-card/FooterCard";
 import FooterList from "../footer-list/FooterList";
 import FooterForm from "../footer-form/footerForm";
 import SocialLinks from "../social-links/SocialLinks";
+import Icon from "../icon/Icon";
 
 export default function Footer() {
 	return (
@@ -64,9 +65,28 @@ export default function Footer() {
 						</section>
 					</section>
 				</section>
-				<section className="mt-20 border-t-cyan-300/70 px-6">
+				<section className="mt-20 border-t border-cyan-300/70 px-6">
 					<section className="centered-container">
-						<section className="column-flex"></section>
+						<section className="column-flex md:flex-between md:flex-row">
+							<section>
+								<section className="flex-between gap-x-2">
+									<section className="w-8 h-8 primary-bg-color rounded-full flex items-center justify-center">
+										<Icon />
+									</section>
+									<section>
+										<span className="primary-color capitalize font-semibold">
+											delta furniture
+										</span>
+									</section>
+									<section className="border-l border-cyan-300">
+										<span className="text-white capitalize">
+											&copy; 2024 delta furniture. all rights reserved.
+										</span>
+									</section>
+								</section>
+							</section>
+							<section></section>
+						</section>
 					</section>
 				</section>
 			</section>
