@@ -26,7 +26,7 @@ export default function Footer() {
 					</section>
 				</section>
 			</section>
-			<section></section>
+			<section className="mt-6 border-t-cyan-300/70"></section>
 		</section>
 	);
 }
