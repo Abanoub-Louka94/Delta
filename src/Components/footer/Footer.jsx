@@ -12,7 +12,7 @@ import Icon from "../icon/Icon";
 
 export default function Footer() {
 	return (
-		<section>
+		<footer>
 			<section className="pt-16 w-full h-full bg-gradient-to-br from-[#04D9C4]/5 via-transparent to-[#04BFAD]/5 ">
 				<section className="centered-container">
 					<section className="grid-container gap-8">
@@ -65,31 +65,63 @@ export default function Footer() {
 						</section>
 					</section>
 				</section>
-				<section className="mt-20 border-t border-cyan-300/70 px-6">
+				<section className="mt-20 border-t border-cyan-300/70 py-6">
 					<section className="centered-container">
-						<section className="column-flex md:flex-between md:flex-row">
+						<section className="gird grid-cols-1 md:grid-cols-2">
 							<section>
 								<section className="flex-between gap-x-2">
 									<section className="w-8 h-8 primary-bg-color rounded-full flex items-center justify-center">
 										<Icon />
 									</section>
-									<section>
+									<section className="pr-4">
 										<span className="primary-color capitalize font-semibold">
 											delta furniture
 										</span>
 									</section>
-									<section className="border-l border-cyan-300">
+									<section className="border-l border-cyan-300 pl-4">
 										<span className="text-white capitalize">
 											&copy; 2024 delta furniture. all rights reserved.
 										</span>
 									</section>
 								</section>
 							</section>
-							<section></section>
+							<section className="flex-between gap-x-4">
+								<section>
+									<ul className="flex-between gap-x-4">
+										<li>
+											<a
+												href="#"
+												className="text-white capitalize hover:primary-color my-transition text-sm"
+											>
+												privacy policy
+											</a>
+										</li>
+										<li>
+											<a
+												href="#"
+												className="text-white capitalize hover:primary-color my-transition text-sm"
+											>
+												terms of service
+											</a>
+										</li>
+									</ul>
+								</section>
+								<section>
+									<section>
+										<p className="text-white capitalize text-sm">
+											made in
+											<span className="primary-color font-semibold">
+												{" "}
+												dubai
+											</span>
+										</p>
+									</section>
+								</section>
+							</section>
 						</section>
 					</section>
 				</section>
 			</section>
-		</section>
+		</footer>
 	);
 }
