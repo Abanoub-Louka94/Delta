@@ -42,10 +42,6 @@ export default function Footer() {
 						<section>
 							<h3 className="capitalize text-white text-xl mb-6">company</h3>
 							<FooterList list={companyList} />
-							<img
-								src="../../assets/footer/social/twitter-svgrepo-com.png"
-								alt=""
-							/>
 						</section>
 						<section>
 							<section className="mb-4">
