@@ -3,6 +3,7 @@ import {
 	servicesList,
 	companyList,
 	socialList,
+	icon,
 } from "./footer-js/footer";
 import FooterCard from "../footer-card/FooterCard";
 import FooterList from "../footer-list/FooterList";
@@ -67,25 +68,24 @@ export default function Footer() {
 				</section>
 				<section className="mt-20 border-t border-cyan-300/70 py-6">
 					<section className="centered-container">
-						<section className="gird grid-cols-1 md:grid-cols-2">
-							<section>
-								<section className="flex-between gap-x-2">
-									<section className="w-8 h-8 primary-bg-color rounded-full flex items-center justify-center">
-										<Icon />
-									</section>
-									<section className="pr-4">
-										<span className="primary-color capitalize font-semibold">
-											delta furniture
-										</span>
-									</section>
-									<section className="border-l border-cyan-300 pl-4">
-										<span className="text-white capitalize">
-											&copy; 2024 delta furniture. all rights reserved.
-										</span>
-									</section>
+						<section className="grid grid-cols-1 lg:grid-cols-2 gap-y-4">
+							<section className="flex items-center md:justify-center gap-x-2">
+								<section className="w-8 h-8 primary-bg-color rounded-full flex items-center justify-center">
+									<Icon path={icon.settingIcon} />
+								</section>
+								<section className="pr-4">
+									<span className="primary-color capitalize font-semibold">
+										delta furniture
+									</span>
+								</section>
+								<section className="border-l border-cyan-300 pl-4">
+									<span className="text-white capitalize">
+										&copy; 2024 delta furniture. all rights reserved.
+									</span>
 								</section>
 							</section>
-							<section className="flex-between gap-x-4">
+
+							<section className="flex justify-center lg:justify-end items-center gap-x-4">
 								<section>
 									<ul className="flex-between gap-x-4">
 										<li>
