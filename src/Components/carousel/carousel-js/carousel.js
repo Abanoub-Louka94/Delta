@@ -234,3 +234,6 @@ export const sliders = [
 		location: "palm jumeirah",
 	},
 ];
+
+export const next = "m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z";
+export const prev = "M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z";
