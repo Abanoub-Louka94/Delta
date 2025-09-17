@@ -31,7 +31,7 @@ export const sliders = [
 		qoute:
 			"'delta furniture's outdoor furniture solutions have been perfect for our terrace dining area. Weather-resistant, stylish, and built to last - exactly what we needed for our high-end establishment. The investment has paid off tremendously.'",
 
-		img: "",
+		img: "/src/assets/slider images/boys/1.jpg",
 
 		name: "marcus thompson",
 
@@ -70,7 +70,7 @@ export const sliders = [
 		qoute:
 			"'from the initial consultation to the final installation, Delta Furniture demonstrated why they're Dubai's premier choice. Their custom curtains and blinds transformed our home's aesthetic completely. The quality and service are unparalleled.'",
 
-		img: "",
+		img: "/src/assets/slider images/girls/1.jpg",
 
 		name: "amira hassan",
 
@@ -110,7 +110,7 @@ export const sliders = [
 		qoute:
 			"'Our corporate office renovation was handled with utmost professionalism by Delta Furniture. They delivered a sophisticated workspace that impresses our clients daily. Their B2B service is efficient and reliable.'",
 
-		img: "",
+		img: "/src/assets/slider images/boys/2.jpg",
 
 		name: "robert chen",
 
@@ -148,7 +148,7 @@ export const sliders = [
 		qoute:
 			"'delta furniture transformed our luxury villa with their exceptional craftsmanship. The attention to detail in every piece is remarkable, and their team's professionalism exceeded our expectations. Working with them was truly a pleasure from start to finish.'",
 
-		img: "",
+		img: "/src/assets/slider images/girls/2.jpg",
 
 		name: "sarah al-maktoum",
 
@@ -187,7 +187,7 @@ export const sliders = [
 		qoute:
 			"'working with delta furniture for our hotel's complete refurbishment was seamless. Their custom solutions and timely delivery helped us achieve our vision perfectly. The quality of their work speaks for itself, and our guests consistently compliment the furniture.'",
 
-		img: "",
+		img: "/src/assets/slider images/boys/3.jpg",
 
 		name: "james richardson",
 
@@ -226,7 +226,7 @@ export const sliders = [
 		qoute:
 			"'The upholstery work on our family furniture was outstanding. Delta's team preserved the original charm while making everything look brand new. Their attention to detail and use of premium materials is unmatched in Dubai. Highly recommended!'",
 
-		img: "",
+		img: "/src/assets/slider images/girls/3.jpg",
 
 		name: "fatima al-zahra",
 

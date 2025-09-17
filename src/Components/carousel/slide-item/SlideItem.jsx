@@ -15,6 +15,27 @@ export default function SlideItem({ sliders }) {
 							<Icon path={star.path} color={slider.iconColor} key={star.id} />
 						))}
 					</section>
+					<section>
+						<p className="text-white capitalize text-sm ">{slider.qoute}</p>
+					</section>
+					<section>
+						<section className="mx-auto rounded-full w-20 h-20 mb-3">
+							<img
+								className="rounded-full object-cover w-full h-full"
+								src={slider.img}
+								alt={slider.name}
+							/>
+						</section>
+						<section className="text-center">
+							<h5 className="text-white font-bold capitalize mb-4">
+								{slider.name}
+							</h5>
+							<p className="text-white text-sm capitalize">{slider.job}</p>
+							<p className="primary-color capitalize text-xs">
+								{slider.location}
+							</p>
+						</section>
+					</section>
 				</section>
 			))}
 		</>
