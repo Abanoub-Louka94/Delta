@@ -14,7 +14,7 @@ import Icon from "../icon/Icon";
 export default function Footer() {
 	return (
 		<footer>
-			<section className="pt-16 w-full h-full bg-gradient-to-br from-[#04D9C4]/5 via-transparent to-[#04BFAD]/5 ">
+			<section className="pt-16 w-full h-full bg-gradient-to-br from-cyan-300/5 via-transparent to-cyan-300/5">
 				<section className="centered-container">
 					<section className="grid-container gap-8">
 						<section>

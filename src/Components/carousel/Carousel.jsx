@@ -3,7 +3,7 @@ import { sliders, next, prev, iconColor } from "./carousel-js/carousel";
 import { useState } from "react";
 import Icon from "../icon/Icon";
 
-export default function Slider() {
+export default function Carousel() {
 	const [currentSlide, setSlide] = useState(0);
 	function nextSlide() {
 		setSlide((next) => (next + 1) % sliders.length);
@@ -13,7 +13,7 @@ export default function Slider() {
 		setSlide((prev) => (prev - 1 + sliders.length) % sliders.length);
 	}
 	return (
-		<section className="relative">
+		<section className="relative w-full lg:mx-auto lg:w-[50%] ">
 			<section className="overflow-hidden rounded-2xl border border-cyan-300/10 hover:border-cyan-300/30 my-transition">
 				<section
 					className="flex my-transition"
@@ -29,12 +29,12 @@ export default function Slider() {
 				</section>
 			</section>
 
-			<section className="absolute right-[-60px] top-1/2 transform -translate-y-1/2 bg-[#1a1a1a] p-2 rounded-full flex items-center border border-cyan-300">
+			<section className="absolute right-[-10px] lg:right-[-60px] top-1/2 transform -translate-y-1/2 bg-[#1a1a1a] p-2 rounded-full flex items-center border border-cyan-300">
 				<button onClick={nextSlide}>
 					<Icon path={next} color={iconColor} />
 				</button>
 			</section>
-			<section className="absolute left-[-60px] top-1/2 transform -translate-y-1/2 bg-[#1a1a1a]  p-2 rounded-full flex items-center border border-cyan-300">
+			<section className="absolute left-[-10px] lg:left-[-60px] top-1/2 transform -translate-y-1/2 bg-[#1a1a1a]  p-2 rounded-full flex items-center border border-cyan-300">
 				<button onClick={prevSlide}>
 					<Icon path={prev} color={iconColor} />
 				</button>

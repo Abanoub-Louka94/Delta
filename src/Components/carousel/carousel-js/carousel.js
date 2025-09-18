@@ -235,6 +235,8 @@ export const sliders = [
 	},
 ];
 
-export const next = "m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z";
-export const prev = "M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z";
+export const next =
+	"M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z";
+export const prev =
+	"m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z";
 export const iconColor = "#53eafd";
