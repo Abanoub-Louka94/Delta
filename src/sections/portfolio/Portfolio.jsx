@@ -7,7 +7,6 @@ import { motion } from "motion/react";
 import { intro, path, images } from "./portfolio-js/portfolio";
 import FullBanner from "../../Components/card-full-banner/FullBanner";
 import PortfolioCard from "../../Components/portfolio-card/PortfolioCard";
-import Slider from "../../Components/carousel/Slider";
 export default function Portfolio() {
 	return (
 		<section id="portfolio" className="py-20">
@@ -207,11 +206,6 @@ export default function Portfolio() {
 									</section>
 								</section>
 							</Card>
-						</section>
-						<section>
-							<section className="centered-container">
-								<Slider />
-							</section>
 						</section>
 					</section>
 				</section>
