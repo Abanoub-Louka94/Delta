@@ -38,6 +38,7 @@ export default function Services() {
 					<motion.section
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
 						transition={{ type: "spring", duration: 2 }}
 					>
 						<Card>
@@ -65,6 +66,7 @@ export default function Services() {
 					<motion.section
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
 						transition={{ type: "spring", duration: 2, delay: 0.2 }}
 					>
 						<Card>
@@ -92,6 +94,7 @@ export default function Services() {
 					<motion.section
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
 						transition={{ type: "spring", duration: 2, delay: 0.4 }}
 					>
 						<Card>
@@ -119,6 +122,7 @@ export default function Services() {
 					<motion.section
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
 						transition={{ type: "spring", duration: 2, delay: 0.6 }}
 					>
 						<Card>

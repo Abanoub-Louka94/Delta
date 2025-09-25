@@ -7,7 +7,7 @@ export default function Header() {
 	return (
 		<header className="h-screen relative">
 			<section className="bg w-full h-full bg-[url(/src/assets/header/header.jpeg)] centered-background">
-				<section className="animate-bounce absolute translate-x-[-50%] translate-y-[-50%] left-[50%] bottom-1 flex items-center column-flex">
+				<section className="animate-bounce absolute -translate-x-1/2 -translate-y-1/2 left-1/2 bottom-1 flex items-center column-flex">
 					<span className="block uppercase text-white text-xs tracking-[2px]">
 						scroll
 					</span>
