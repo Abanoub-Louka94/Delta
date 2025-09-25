@@ -2,7 +2,8 @@ import NavBar from "../../Components/navbar/NavBar";
 import Button from "../../Components/button/Button";
 import StatsCard from "../../Components/stats-card/StatsCard";
 import Icon from "../../Components/icon/Icon";
-import { path } from "../header/header-js/header";
+import { path, CardData } from "../header/header-js/header";
+import HeaderCard from "../../Components/header-card/HeaderCard";
 export default function Header() {
 	return (
 		<header className="h-screen relative">
@@ -47,46 +48,8 @@ export default function Header() {
 								</Button>
 							</section>
 						</section>
-						<section className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-y-4">
-							<StatsCard>
-								<section className="w-16 h-16 animate-[shadow-pulse_5s_ease-out_0.5s_infinite] bg-gradient-to-br from-cyan-300/20 to-cyan-300/20 rounded-full flex items-center justify-center mb-4 border border-[#04D9C4]/30 group-hover:border-[#04D9C4]/60 transition-colors duration-300">
-									<Icon path={path.path_1} color={path.color} />
-								</section>
-								<section>
-									<span className="block primary-color font-bold text-2xl mb-1">
-										5+
-									</span>
-									<span className="block text-white text-[12px] capitalize">
-										years excellence
-									</span>
-								</section>
-							</StatsCard>
-							<StatsCard>
-								<section className="w-16 h-16 animate-[shadow-pulse_5s_ease-out_1s_infinite] bg-gradient-to-br from-cyan-300/20 to-cyan-300/20 rounded-full flex items-center justify-center mb-4 border border-[#04D9C4]/30 group-hover:border-[#04D9C4]/60 transition-colors duration-300">
-									<Icon path={path.path_2} color={path.color} />
-								</section>
-								<section>
-									<span className="block primary-color font-bold text-2xl mb-1">
-										500+
-									</span>
-									<span className="block text-white text-[12px] capitalize">
-										happy clients
-									</span>
-								</section>
-							</StatsCard>
-							<StatsCard>
-								<section className="w-16 h-16 animate-[shadow-pulse_5s_ease-out_2s_infinite] bg-gradient-to-br from-cyan-300/20 to-cyan-300/20 rounded-full flex items-center justify-center mb-4 border border-[#04D9C4]/30 group-hover:border-[#04D9C4]/60 transition-colors duration-300">
-									<Icon path={path.path_3} color={path.color} />
-								</section>
-								<section>
-									<span className="block primary-color font-bold text-2xl mb-1">
-										1000+
-									</span>
-									<span className="block text-white text-[12px] capitalize">
-										project delivered
-									</span>
-								</section>
-							</StatsCard>
+						<section className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+							<HeaderCard data />
 						</section>
 					</section>
 				</section>
