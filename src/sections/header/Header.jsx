@@ -1,24 +1,15 @@
 import NavBar from "../../Components/navbar/NavBar";
 import Button from "../../Components/button/Button";
-import StatsCard from "../../Components/stats-card/StatsCard";
 import Icon from "../../Components/icon/Icon";
 import { path, CardData } from "../header/header-js/header";
 import HeaderCard from "../../Components/header-card/HeaderCard";
 export default function Header() {
 	return (
-		<header className="h-screen relative">
+		<header className="h-screen  overflow-hidden">
 			<section className="bg w-full h-full bg-[url(/src/assets/header/header.jpeg)] centered-background">
-				<section className="animate-bounce absolute -translate-x-1/2 -translate-y-1/2 left-1/2 bottom-1 flex items-center column-flex">
-					<span className="block uppercase text-white text-xs tracking-[2px]">
-						scroll
-					</span>
-					<span className="block">
-						<Icon path={path.path_6} color={path.color_white} />
-					</span>
-				</section>
 				<section className="w-full h-screen bg-gradient-to-b from-black/50 via-black/30 to-black/80 flex  justify-center items-center">
 					<NavBar />
-					<section className="">
+					<section className="relative">
 						<section className="mb-6 w-fit mx-auto">
 							<span className="text-sm md:text-base primary-color tracking-[3px] uppercase w-fit py-3 px-6 rounded-full block bg-cyan-500/30 backdrop-blur-sm ">
 								dubai's premier furniture atelier
@@ -49,7 +40,17 @@ export default function Header() {
 							</section>
 						</section>
 						<section className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-							<HeaderCard data />
+							{CardData.map((card) => (
+								<HeaderCard data={card} key={card.description} />
+							))}
+						</section>
+						<section className="animate-bounce absolute -translate-x-1/2 -translate-y-1/2 left-1/2 bottom-[-120px] flex items-center column-flex">
+							<span className="block uppercase text-white text-xs tracking-[2px]">
+								scroll
+							</span>
+							<span className="block">
+								<Icon path={path.path_6} color={path.color_white} />
+							</span>
 						</section>
 					</section>
 				</section>
