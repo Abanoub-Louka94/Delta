@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import { useState } from "react";
 import ScrollProgress from "../ScrollProgress/ScrollProgress";
 import Logo from "./logo/Logo";
@@ -6,6 +7,7 @@ import Call from "./icons/call/Call";
 import MobileLinks from "./mobile-links/MobileLinks";
 import ToggleMenu from "./toggel-menu/ToggleMenu";
 import { AnimatePresence } from "motion/react";
+import { container } from "./nav-js/nav";
 export default function NavBar() {
 	const [isToggled, setIsToggled] = useState(false);
 
@@ -13,7 +15,12 @@ export default function NavBar() {
 		setIsToggled((isToggled) => !isToggled);
 	}
 	return (
-		<nav className="fixed w-full top-0 left-0 bg-black py-5 z-10">
+		<motion.nav
+			className="fixed w-full top-0 left-0 bg-black py-5 z-10"
+			variants={container}
+			initial="hidden"
+			animate="show"
+		>
 			<section className="relative">
 				<ScrollProgress />
 				<section className="centered-container">
@@ -31,6 +38,6 @@ export default function NavBar() {
 					</section>
 				</section>
 			</section>
-		</nav>
+		</motion.nav>
 	);
 }
