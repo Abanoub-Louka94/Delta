@@ -9,8 +9,3 @@ export const container = {
 		},
 	},
 };
-
-export const item = {
-	hidden: { x: -5, opacity: 0 },
-	show: { x: 0, opacity: 1 },
-};

@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion, useScroll, useTransform } from "motion/react";
 import { useState } from "react";
 import ScrollProgress from "../ScrollProgress/ScrollProgress";
 import Logo from "./logo/Logo";
@@ -10,13 +10,20 @@ import { AnimatePresence } from "motion/react";
 import { container } from "./nav-js/nav";
 export default function NavBar() {
 	const [isToggled, setIsToggled] = useState(false);
+	const { scrollYProgress } = useScroll();
+	const backGroundColor = useTransform(
+		scrollYProgress,
+		[0, 10],
+		["#ff0", "#f00"]
+	);
 
 	function toggle() {
 		setIsToggled((isToggled) => !isToggled);
 	}
 	return (
 		<motion.nav
-			className="fixed w-full top-0 left-0 bg-black py-5 z-10"
+			style={{ backGroundColor }}
+			className="fixed w-full top-0 left-0 py-5 z-10"
 			variants={container}
 			initial="hidden"
 			animate="show"
