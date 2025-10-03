@@ -25,7 +25,7 @@ export default function Services() {
 					</section>
 				</Intro>
 				<motion.section
-					className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-x-6 gap-y-10 overflow-hidden"
+					className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-x-6 gap-y-10"
 					variants={container}
 					initial="hidden"
 					whileInView="show"
