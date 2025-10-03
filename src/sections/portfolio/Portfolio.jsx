@@ -2,7 +2,7 @@ import Intro from "../../Components/section-intro/Intro";
 import Button from "../../Components/button/Button";
 import Icon from "../../Components/icon/Icon";
 import StatsCard from "../../Components/stats-card/StatsCard";
-import Card from "../../Components/card/Card";
+import ServicesCard from "../../Components/services-card/ServicesCard";
 import { motion } from "motion/react";
 import { intro, path, images } from "./portfolio-js/portfolio";
 import FullBanner from "../../Components/card-full-banner/FullBanner";
@@ -152,7 +152,7 @@ export default function Portfolio() {
 							description={intro.description_2}
 						></Intro>
 						<section className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-							<Card>
+							{/* <ServicesCard>
 								<section className="rounded-[10px] group relative bg-[#1a1a1a]  p-8 flex flex-col justify-center items-center">
 									<section className=" flex w-14 h-14  rounded-full primary-bg-color justify-center items-center mb-4">
 										<Icon path={path.path_7} color={path.color_white} />
@@ -169,8 +169,8 @@ export default function Portfolio() {
 										</p>
 									</section>
 								</section>
-							</Card>
-							<Card>
+							</ServicesCard>
+							<ServicesCard>
 								<section className="rounded-[10px] group bg-[#1a1a1a]  p-8  flex flex-col justify-center items-center">
 									<section className=" flex w-14 h-14  rounded-full primary-bg-color justify-center items-center mb-4">
 										<Icon path={path.path_8} color={path.color_white} />
@@ -187,8 +187,8 @@ export default function Portfolio() {
 										</p>
 									</section>
 								</section>
-							</Card>
-							<Card>
+							</ServicesCard>
+							<ServicesCard>
 								<section className="rounded-[10px] group relative bg-[#1a1a1a]  p-8  flex flex-col justify-center items-center">
 									<section className=" flex w-14 h-14  rounded-full primary-bg-color justify-center items-center mb-4">
 										<Icon path={path.path_9} color={path.color_white} />
@@ -205,7 +205,7 @@ export default function Portfolio() {
 										</p>
 									</section>
 								</section>
-							</Card>
+							</ServicesCard> */}
 						</section>
 					</section>
 				</section>
