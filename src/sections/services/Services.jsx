@@ -100,7 +100,7 @@ export default function Services() {
 						<Card>
 							<CardBanner image={images.banner_3} />
 							<section className="absolute top-[20px] right-[20px] flex w-fit rounded-full primary-bg-color justify-center items-center p-2 ">
-								<Icon path={path.path_2} color={path.color_white} />
+								<Icon path={path.path_3} color={path.color_white} />
 							</section>
 							<section className="p-6">
 								<section className="mb-4 lg:mb-9 2xl:mb-4">
