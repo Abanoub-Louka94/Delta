@@ -56,7 +56,7 @@ export default function Header() {
 							))}
 						</motion.section>
 						<motion.section
-							className="animate-bounce absolute -translate-x-1/2 -translate-y-1/2 left-1/2 bottom-[-120px] flex items-center column-flex"
+							className="animate-bounce absolute -translate-x-1/2 -translate-y-1/2 left-1/2 bottom-[-120px]  flex items-center column-flex"
 							variants={item}
 						>
 							<span className="block uppercase text-white text-xs tracking-[2px]">

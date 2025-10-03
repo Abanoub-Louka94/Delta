@@ -11,10 +11,10 @@ import { container } from "./nav-js/nav";
 export default function NavBar() {
 	const [isToggled, setIsToggled] = useState(false);
 	const { scrollYProgress } = useScroll();
-	const backGroundColor = useTransform(
+	const backgroundColor = useTransform(
 		scrollYProgress,
-		[0, 10],
-		["#ff0", "#f00"]
+		[0, 1],
+		["transparent", "#000000"]
 	);
 
 	function toggle() {
@@ -22,7 +22,7 @@ export default function NavBar() {
 	}
 	return (
 		<motion.nav
-			style={{ backGroundColor }}
+			style={{ backgroundColor }}
 			className="fixed w-full top-0 left-0 py-5 z-10"
 			variants={container}
 			initial="hidden"
