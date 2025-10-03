@@ -1,12 +1,19 @@
+import { motion } from "motion/react";
 import Intro from "../../Components/section-intro/Intro";
 import Button from "../../Components/button/Button";
 import Icon from "../../Components/icon/Icon";
 import StatsCard from "../../Components/stats-card/StatsCard";
-import ServicesCard from "../../Components/services-card/ServicesCard";
-import { motion } from "motion/react";
-import { intro, path, images } from "./portfolio-js/portfolio";
 import FullBanner from "../../Components/card-full-banner/FullBanner";
 import PortfolioCard from "../../Components/portfolio-card/PortfolioCard";
+import StrengthsCard from "../../Components/strengths-card/StrengthsCard";
+import {
+	intro,
+	path,
+	images,
+	cards,
+	container,
+} from "./portfolio-js/portfolio";
+
 export default function Portfolio() {
 	return (
 		<section id="portfolio" className="py-20">
@@ -151,62 +158,17 @@ export default function Portfolio() {
 							title={intro.title_2}
 							description={intro.description_2}
 						></Intro>
-						<section className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-							{/* <ServicesCard>
-								<section className="rounded-[10px] group relative bg-[#1a1a1a]  p-8 flex flex-col justify-center items-center">
-									<section className=" flex w-14 h-14  rounded-full primary-bg-color justify-center items-center mb-4">
-										<Icon path={path.path_7} color={path.color_white} />
-									</section>
-									<section className="text-white text-center">
-										<h5 className="capitalize mb-5 group-hover:primary-color my-transition">
-											expertise
-										</h5>
-										<p className="text-sm leading-relaxed">
-											Expertise Over 50 years of specialized knowledge in luxury
-											furniture manufacturing, with master craftsmen who
-											understand the nuances of premium materials and
-											traditional techniques.
-										</p>
-									</section>
-								</section>
-							</ServicesCard>
-							<ServicesCard>
-								<section className="rounded-[10px] group bg-[#1a1a1a]  p-8  flex flex-col justify-center items-center">
-									<section className=" flex w-14 h-14  rounded-full primary-bg-color justify-center items-center mb-4">
-										<Icon path={path.path_8} color={path.color_white} />
-									</section>
-									<section className="text-white text-center">
-										<h5 className="capitalize mb-5 group-hover:primary-color my-transition">
-											expertise
-										</h5>
-										<p className="text-sm leading-relaxed">
-											Expertise Over 50 years of specialized knowledge in luxury
-											furniture manufacturing, with master craftsmen who
-											understand the nuances of premium materials and
-											traditional techniques.
-										</p>
-									</section>
-								</section>
-							</ServicesCard>
-							<ServicesCard>
-								<section className="rounded-[10px] group relative bg-[#1a1a1a]  p-8  flex flex-col justify-center items-center">
-									<section className=" flex w-14 h-14  rounded-full primary-bg-color justify-center items-center mb-4">
-										<Icon path={path.path_9} color={path.color_white} />
-									</section>
-									<section className="text-white text-center">
-										<h5 className="capitalize mb-5 group-hover:primary-color my-transition">
-											expertise
-										</h5>
-										<p className="text-sm leading-relaxed">
-											Expertise Over 50 years of specialized knowledge in luxury
-											furniture manufacturing, with master craftsmen who
-											understand the nuances of premium materials and
-											traditional techniques.
-										</p>
-									</section>
-								</section>
-							</ServicesCard> */}
-						</section>
+						<motion.section
+							className="grid grid-cols-1 lg:grid-cols-3 gap-8"
+							variants={container}
+							initial="hidden"
+							whileInView="show"
+							viewport={{ once: true }}
+						>
+							{cards.map((card, index) => (
+								<StrengthsCard card={card} key={index} />
+							))}
+						</motion.section>
 					</section>
 				</section>
 			</section>

@@ -90,9 +90,7 @@ export const container = {
 		opacity: 1,
 		transition: {
 			type: "spring",
-			stiffness: 100,
-			damping: 15,
-			staggerChildren: 0.3, // Delay between each child animation
+			staggerChildren: 0.5, // Delay between each child animation
 		},
 	},
 };
