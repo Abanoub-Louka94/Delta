@@ -10,6 +10,7 @@ export default function ServicesCard({ card }) {
 		<motion.section
 			className="rounded-[10px] relative border hover:border-cyan-300 my-transition"
 			variants={item}
+			transition={{ duration: 0.3 }}
 		>
 			<CardBanner image={card.banner} />
 			<section className="absolute top-[20px] right-[20px] flex w-fit rounded-full primary-bg-color justify-center items-center p-2 ">

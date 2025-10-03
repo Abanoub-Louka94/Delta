@@ -6,13 +6,7 @@ import StatsCard from "../../Components/stats-card/StatsCard";
 import FullBanner from "../../Components/card-full-banner/FullBanner";
 import PortfolioCard from "../../Components/portfolio-card/PortfolioCard";
 import StrengthsCard from "../../Components/strengths-card/StrengthsCard";
-import {
-	intro,
-	path,
-	images,
-	cards,
-	container,
-} from "./portfolio-js/portfolio";
+import { intro, path, images } from "./portfolio-js/portfolio";
 
 export default function Portfolio() {
 	return (
@@ -158,17 +152,8 @@ export default function Portfolio() {
 							title={intro.title_2}
 							description={intro.description_2}
 						></Intro>
-						<motion.section
-							className="grid grid-cols-1 lg:grid-cols-3 gap-8"
-							variants={container}
-							initial="hidden"
-							whileInView="show"
-							viewport={{ once: true }}
-						>
-							{cards.map((card, index) => (
-								<StrengthsCard card={card} key={index} />
-							))}
-						</motion.section>
+
+						<StrengthsCard />
 					</section>
 				</section>
 			</section>

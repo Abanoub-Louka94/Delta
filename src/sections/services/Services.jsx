@@ -6,7 +6,6 @@ import Intro from "../../Components/section-intro/Intro";
 import { path, intro, cards, container, item } from "./services-js/services";
 
 export default function Services() {
-	console.log("Services component rendered");
 	return (
 		<section
 			id="services"

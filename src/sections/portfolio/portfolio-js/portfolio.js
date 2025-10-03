@@ -76,7 +76,7 @@ export const container = {
 	show: {
 		opacity: 1,
 		transition: {
-			staggerChildren: 0.5,
+			staggerChildren: 0.7,
 		},
 	},
 };
@@ -84,5 +84,4 @@ export const container = {
 export const item = {
 	hidden: { y: 50, opacity: 0 },
 	show: { y: 0, opacity: 1 },
-	transition: { duration: 3 },
 };
