@@ -4,6 +4,7 @@ import Icon from "../../Components/icon/Icon";
 import Slider from "../../Components/carousel/Carousel";
 import { intro, path, cardsData } from "./about-js/about";
 import AboutCard from "../../Components/about-card/AboutCard";
+import Occordion from "../../Components/occordion/Occordion";
 
 export default function About() {
 	return (
@@ -41,7 +42,9 @@ export default function About() {
 								<AboutCard data={data} key={data.title} />
 							))}
 						</section>
-						<section></section>
+						<section className="flex flex-col justify-center gap-y-3">
+							<Occordion />
+						</section>
 					</section>
 				</section>
 			</section>

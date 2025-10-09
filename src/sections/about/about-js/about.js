@@ -43,3 +43,42 @@ export const cardsData = [
 			"We continuously evolve our craft, incorporating cutting-edge techniques while honoring traditional craftsmanship to create timeless furniture pieces.",
 	},
 ];
+
+export const occordionData = [
+	{
+		icon: "M480-440q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM240-40v-309q-38-42-59-96t-21-115q0-134 93-227t227-93q134 0 227 93t93 227q0 61-21 115t-59 96v309l-240-80-240 80Zm240-280q100 0 170-70t70-170q0-100-70-170t-170-70q-100 0-170 70t-70 170q0 100 70 170t170 70ZM320-159l160-41 160 41v-124q-35 20-75.5 31.5T480-240q-44 0-84.5-11.5T320-283v124Zm160-62Z",
+		iconColor: "#53eafd",
+		title: "company core values",
+		list: [
+			"Excellence in every piece we create",
+			"Sustainable and responsible manufacturing",
+			"Customer-centric approach to design",
+			"Integrity in all business relationships",
+			"Continuous innovation and improvement",
+		],
+	},
+	{
+		icon: "M480-80q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q104-33 172-132t68-220v-189l-240-90-240 90v189q0 121 68 220t172 132Zm0-316Z",
+		iconColor: "#53eafd",
+		title: "delta's competitive advantage:",
+		list: [
+			"Excellence in every piece we create",
+			"Sustainable and responsible manufacturing",
+			"Customer-centric approach to design",
+			"Integrity in all business relationships",
+			"Continuous innovation and improvement",
+		],
+	},
+	{
+		icon: "M475-160q4 0 8-2t6-4l328-328q12-12 17.5-27t5.5-30q0-16-5.5-30.5T817-607L647-777q-11-12-25.5-17.5T591-800q-15 0-30 5.5T534-777l-11 11 74 75q15 14 22 32t7 38q0 42-28.5 70.5T527-522q-20 0-38.5-7T456-550l-75-74-175 175q-3 3-4.5 6.5T200-435q0 8 6 14.5t14 6.5q4 0 8-2t6-4l136-136 56 56-135 136q-3 3-4.5 6.5T285-350q0 8 6 14t14 6q4 0 8-2t6-4l136-135 56 56-135 136q-3 2-4.5 6t-1.5 8q0 8 6 14t14 6q4 0 7.5-1.5t6.5-4.5l136-135 56 56-136 136q-3 3-4.5 6.5T454-180q0 8 6.5 14t14.5 6Zm-1 80q-37 0-65.5-24.5T375-166q-34-5-57-28t-28-57q-34-5-56.5-28.5T206-336q-38-5-62-33t-24-66q0-20 7.5-38.5T149-506l232-231 131 131q2 3 6 4.5t8 1.5q9 0 15-5.5t6-14.5q0-4-1.5-8t-4.5-6L398-777q-11-12-25.5-17.5T342-800q-15 0-30 5.5T285-777L144-635q-9 9-15 21t-8 24q-2 12 0 24.5t8 23.5l-58 58q-17-23-25-50.5T40-590q2-28 14-54.5T87-692l141-141q24-23 53.5-35t60.5-12q31 0 60.5 12t52.5 35l11 11 11-11q24-23 53.5-35t60.5-12q31 0 60.5 12t52.5 35l169 169q23 23 35 53t12 61q0 31-12 60.5T873-437L545-110q-14 14-32.5 22T474-80Zm-99-560Z",
+		iconColor: "#53eafd",
+		title: "commitment to care:",
+		list: [
+			"Excellence in every piece we create",
+			"Sustainable and responsible manufacturing",
+			"Customer-centric approach to design",
+			"Integrity in all business relationships",
+			"Continuous innovation and improvement",
+		],
+	},
+];
