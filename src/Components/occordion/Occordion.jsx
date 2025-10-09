@@ -27,7 +27,7 @@ export default function Occordion() {
 
 function OccordionComponent({ data, selected, toggole, index }) {
 	return (
-		<section className="bg-[#1a1a1a] rounded-2xl border border-cyan-300/20 ">
+		<section className="bg-[#1a1a1a] rounded-2xl border border-cyan-300/20 overflow-hidden">
 			<section
 				className="cursor-pointer border-b border-cyan-300/10 flex-between p-4 md:p-6"
 				onClick={() => toggole(index)}
@@ -41,15 +41,17 @@ function OccordionComponent({ data, selected, toggole, index }) {
 					</section>
 				</section>
 				<section
-					className={`${index === selected ? "rotate-180" : "rotate-0"}`}
+					className={`${
+						index === selected ? "rotate-180" : "rotate-0"
+					} my-transition`}
 				>
-					<span></span>
+					<Icon path={data.arrowIcon} color={data.iconColor} />
 				</section>
 			</section>
 			<section
 				className={`${
-					index === selected ? `h-auto` : `h-0`
-				} p-4 md:p-6 my-transition overflow-hidden`}
+					index === selected ? `h-auto py-4 md:py-6` : `max-h-0 py-0`
+				}  my-transition overflow-hidden px-4 md:px-6`}
 			>
 				<ul>
 					{data.list.map((item, index) => (
