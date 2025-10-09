@@ -2,7 +2,7 @@ import Button from "../../Components/button/Button";
 import Intro from "../../Components/section-intro/Intro";
 import Icon from "../../Components/icon/Icon";
 import Slider from "../../Components/carousel/Carousel";
-import { intro, path, cardsData } from "./about-js/about";
+import { intro, path } from "./about-js/about";
 import AboutCard from "../../Components/about-card/AboutCard";
 import Occordion from "../../Components/occordion/Occordion";
 
@@ -38,11 +38,9 @@ export default function About() {
 					</Intro>
 					<section className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
 						<section>
-							{cardsData.map((data) => (
-								<AboutCard data={data} key={data.title} />
-							))}
+							<AboutCard />
 						</section>
-						<section className="flex flex-col justify-center gap-y-3">
+						<section>
 							<Occordion />
 						</section>
 					</section>

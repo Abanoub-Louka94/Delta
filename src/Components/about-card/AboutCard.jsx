@@ -1,6 +1,17 @@
 import Icon from "../../Components/icon/Icon";
+import { cardsData } from "../../sections/about/about-js/about";
 
-export default function AboutCard({ data }) {
+export default function AboutCard() {
+	return (
+		<>
+			{cardsData.map((data) => (
+				<Card data={data} key={data.title} />
+			))}
+		</>
+	);
+}
+
+function Card({ data }) {
 	return (
 		<section className="flex flex-col md:flex-row justify-center gap-4 mb-10">
 			<section className="icon mx-auto md:mx-0">

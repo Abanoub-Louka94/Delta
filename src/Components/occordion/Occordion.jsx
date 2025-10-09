@@ -11,7 +11,7 @@ export default function Occordion() {
 		setIsSelectede(index);
 	}
 	return (
-		<>
+		<section className="flex flex-col  gap-y-3">
 			{occordionData.map((occ, index) => (
 				<OccordionComponent
 					data={occ}
@@ -21,7 +21,7 @@ export default function Occordion() {
 					index={index}
 				/>
 			))}
-		</>
+		</section>
 	);
 }
 
