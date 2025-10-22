@@ -9,27 +9,30 @@ import Footer from "./Components/footer/Footer.jsx";
 
 function App() {
 	const sectionsRef = {
-		homeRef: useRef(null),
-		servicesRef: useRef(null),
-		PortRef: useRef(null),
-		aboutRef: useRef(null),
-		contactRef: useRef(null),
+		home: useRef(null),
+		services: useRef(null),
+		portfolio: useRef(null),
+		about: useRef(null),
+		contact: useRef(null),
 	};
 
 	function scrollToSections(sectionId) {
-		sectionsRef[sectionId]?.current.scrollIntoView({
+		sectionsRef[sectionId].current?.scrollIntoView({
 			behavior: "smooth",
 			block: "start",
+			inline: "nearest",
 		});
-		console.log(sectionsRef[sectionId]);
+		console.log("scrolling to", sectionId);
+		console.log("Ref:", sectionsRef[sectionId]);
+		console.log("Element:", sectionsRef[sectionId]?.current);
 	}
 	return (
 		<main>
-			<Header homeRef={sectionsRef.homeRef} scroll={scrollToSections} />
-			<Services servicesRef={sectionsRef.servicesRef} />
-			<Portfolio PortRef={sectionsRef.PortRef} />
-			<About aboutRef={sectionsRef.aboutRef} />
-			<Contact contactRef={sectionsRef.contactRef} />
+			<Header homeRef={sectionsRef.home} scroll={scrollToSections} />
+			<Services servicesRef={sectionsRef.services} />
+			<Portfolio PortRef={sectionsRef.portfolio} />
+			<About aboutRef={sectionsRef.about} />
+			<Contact contactRef={sectionsRef.contact} />
 			<Footer />
 		</main>
 	);
