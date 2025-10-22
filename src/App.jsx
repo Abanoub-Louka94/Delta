@@ -1,5 +1,5 @@
 import "./style.css";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Header from "./sections/header/Header.jsx";
 import Services from "./sections/services/Services.jsx";
 import Portfolio from "./sections/portfolio/Portfolio.jsx";
@@ -8,31 +8,56 @@ import Contact from "./sections/contact-us/Contact.jsx";
 import Footer from "./Components/footer/Footer.jsx";
 
 function App() {
-	const sectionsRef = {
-		home: useRef(null),
-		services: useRef(null),
-		portfolio: useRef(null),
-		about: useRef(null),
-		contact: useRef(null),
-	};
+	const [activeSection, setActiveSection] = useState("home");
+	const home = useRef(null);
+	const services = useRef(null);
+	const portfolio = useRef(null);
+	const about = useRef(null);
+	const contact = useRef(null);
+	const navLinks = [
+		{
+			id: "home",
+			ref: home,
+		},
+		{
+			id: "services",
+			ref: services,
+		},
+		{
+			id: "portfolio",
+			ref: portfolio,
+		},
+		{
+			id: "about",
+			ref: about,
+		},
+		{
+			id: "contact",
+			ref: contact,
+		},
+	];
 
-	function scrollToSections(sectionId) {
-		sectionsRef[sectionId].current?.scrollIntoView({
+	function scrollToSections(ref, sectionName) {
+		setActiveSection(sectionName);
+		ref.current?.scrollIntoView({
 			behavior: "smooth",
-			block: "start",
-			inline: "nearest",
 		});
-		console.log("scrolling to", sectionId);
-		console.log("Ref:", sectionsRef[sectionId]);
-		console.log("Element:", sectionsRef[sectionId]?.current);
+		console.log("scrolling to", sectionName);
+		console.log("Ref:", sectionName);
+		console.log("Element:", sectionName?.current);
 	}
 	return (
 		<main>
-			<Header homeRef={sectionsRef.home} scroll={scrollToSections} />
-			<Services servicesRef={sectionsRef.services} />
-			<Portfolio PortRef={sectionsRef.portfolio} />
-			<About aboutRef={sectionsRef.about} />
-			<Contact contactRef={sectionsRef.contact} />
+			<Header
+				homeRef={home}
+				scroll={scrollToSections}
+				activeSection={activeSection}
+				navLinks={navLinks}
+			/>
+			<Services servicesRef={services} />
+			<Portfolio PortRef={portfolio} />
+			<About aboutRef={about} />
+			<Contact contactRef={contact} />
 			<Footer />
 		</main>
 	);
