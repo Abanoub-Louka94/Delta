@@ -6,9 +6,9 @@ import Form from "../../Components/form/form";
 import Social from "../../Components/social-icon/Social";
 import ContactCards from "../../Components/contact-cards/ContactCards";
 
-export default function Contact() {
+export default function Contact({ contactRef }) {
 	return (
-		<section id="contact" className="py-20">
+		<section id="contact" className="py-20" ref={contactRef}>
 			<section className="centered-container">
 				<Intro title={intro.title} description={intro.description}>
 					<section className="rounded-full mb-6 px-6 py-3 w-fit mx-auto bg-cyan-300/10 border border-cyan-300/20">

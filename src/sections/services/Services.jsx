@@ -5,9 +5,10 @@ import Button from "../../Components/button/Button";
 import Intro from "../../Components/section-intro/Intro";
 import { path, intro, cards, container, item } from "./services-js/services";
 
-export default function Services() {
+export default function Services({ servicesRef }) {
 	return (
 		<section
+			ref={servicesRef}
 			id="services"
 			className="py-20 bg-gradient-to-br from-cyan-300/10 via-transparent to-cyan-300/10 "
 		>

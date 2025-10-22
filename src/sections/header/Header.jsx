@@ -4,12 +4,12 @@ import Button from "../../Components/button/Button";
 import Icon from "../../Components/icon/Icon";
 import { path, CardData, container, item } from "../header/header-js/header";
 import HeaderCard from "../../Components/header-card/HeaderCard";
-export default function Header() {
+export default function Header({ scroll, homeRef }) {
 	return (
-		<header className="h-screen  overflow-hidden">
+		<header className="h-screen  overflow-hidden" ref={homeRef}>
 			<section className="bg w-full h-full bg-[url(/src/assets/header/header.jpeg)] centered-background">
 				<section className="w-full h-screen bg-gradient-to-b from-black/50 via-black/30 to-black/80 flex  justify-center items-center">
-					<NavBar />
+					<NavBar scroll={scroll} />
 
 					<motion.section
 						className="relative"

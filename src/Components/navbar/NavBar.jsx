@@ -8,7 +8,8 @@ import MobileLinks from "./mobile-links/MobileLinks";
 import ToggleMenu from "./toggel-menu/ToggleMenu";
 import { AnimatePresence } from "motion/react";
 import { container } from "./nav-js/nav";
-export default function NavBar() {
+
+export default function NavBar({ scroll }) {
 	const [isToggled, setIsToggled] = useState(false);
 	const { scrollYProgress } = useScroll();
 	const backgroundColor = useTransform(
@@ -33,7 +34,7 @@ export default function NavBar() {
 				<section className="centered-container">
 					<section className="flex-between">
 						<Logo />
-						<DeskTopLinks />
+						<DeskTopLinks scroll={scroll} />
 						<AnimatePresence>{isToggled && <MobileLinks />}</AnimatePresence>
 						<section className="hidden lg:flex-between">
 							<span>

@@ -8,9 +8,9 @@ import PortfolioCard from "../../Components/portfolio-card/PortfolioCard";
 import StrengthsCard from "../../Components/strengths-card/StrengthsCard";
 import { intro, path, images } from "./portfolio-js/portfolio";
 
-export default function Portfolio() {
+export default function Portfolio({ PortRef }) {
 	return (
-		<section id="portfolio" className="py-20">
+		<section id="portfolio" className="py-20" ref={PortRef}>
 			<section className="centered-container">
 				<Intro title={intro.title_1} description={intro.description_1}>
 					<section className="rounded-full mb-6 px-6 py-3 w-fit mx-auto bg-cyan-300/10 border border-cyan-300/20">

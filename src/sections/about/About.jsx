@@ -6,9 +6,9 @@ import { intro, path } from "./about-js/about";
 import AboutCard from "../../Components/about-card/AboutCard";
 import Occordion from "../../Components/occordion/Occordion";
 
-export default function About() {
+export default function About({ aboutRef }) {
 	return (
-		<section id="about">
+		<section id="about" ref={aboutRef}>
 			<section className="py-20 bg-gradient-to-br from-cyan-300/5 via-transparent to-cyan-300/5">
 				<section className="centered-container">
 					<Intro title={intro.title} description={intro.description}>

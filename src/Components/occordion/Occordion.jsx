@@ -6,9 +6,7 @@ export default function Occordion() {
 	const [selected, setIsSelectede] = useState(null);
 
 	function toggole(index) {
-		index === selected ? null : index;
-
-		setIsSelectede(index);
+		selected === index ? setIsSelectede(null) : setIsSelectede(index);
 	}
 	return (
 		<section className="flex flex-col  gap-y-3">
@@ -50,7 +48,7 @@ function OccordionComponent({ data, selected, toggole, index }) {
 			</section>
 			<section
 				className={`${
-					index === selected ? `h-auto py-4 md:py-6` : `max-h-0 py-0`
+					index === selected ? `h-auto py-4 md:py-6` : `h-0 py-0`
 				}  my-transition overflow-hidden px-4 md:px-6`}
 			>
 				<ul>

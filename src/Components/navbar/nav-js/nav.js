@@ -1,3 +1,26 @@
+export const navLinks = [
+	{
+		id: "home",
+		lable: "home",
+	},
+	{
+		id: "services",
+		lable: "services",
+	},
+	{
+		id: "portfolio",
+		lable: "portfolio",
+	},
+	{
+		id: "about",
+		lable: "about",
+	},
+	{
+		id: "contact",
+		lable: "contact",
+	},
+];
+
 export const container = {
 	hidden: { opacity: 0, y: -50 },
 	show: {
