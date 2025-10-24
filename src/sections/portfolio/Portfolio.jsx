@@ -6,7 +6,13 @@ import StatsCard from "../../Components/stats-card/StatsCard";
 import FullBanner from "../../Components/card-full-banner/FullBanner";
 import PortfolioCard from "../../Components/portfolio-card/PortfolioCard";
 import StrengthsCard from "../../Components/strengths-card/StrengthsCard";
-import { intro, path, images } from "./portfolio-js/portfolio";
+import {
+	intro,
+	path,
+	images,
+	statsCard,
+	portfolioCard,
+} from "./portfolio-js/portfolio";
 
 export default function Portfolio({ PortRef }) {
 	return (
@@ -22,33 +28,7 @@ export default function Portfolio({ PortRef }) {
 						</Button>
 					</section>
 				</Intro>
-				<section className="grid-container gap-x-6 gap-y-10 mb-20">
-					<StatsCard>
-						<span className="block primary-color text-5xl mb-4">10,000+</span>
-						<span className="block text-white capitalize">
-							projects completed
-						</span>
-					</StatsCard>
-					<StatsCard>
-						<span className="block primary-color text-5xl mb-4">500+</span>
-						<span className="block text-white capitalize">happy clients</span>
-					</StatsCard>
-					<StatsCard>
-						<span className="primary-color text-5xl mb-4 inline-flex gap-x-2">
-							4.8
-							<section className="animate-wiggle">
-								<Icon path={path.path_2} color={path.color_primary} />
-							</section>
-						</span>
-						<span className="block text-white capitalize">customer rating</span>
-					</StatsCard>
-					<StatsCard>
-						<span className="block primary-color text-5xl mb-4">50+</span>
-						<span className="block text-white capitalize">
-							years of experience
-						</span>
-					</StatsCard>
-				</section>
+				<StatsCard cards={statsCard} />
 				<section className="grid grid-cols-1 xl:grid-cols-2 mb-20 gap-16">
 					<section className="relative h-[500px] overflow-hidden rounded-[10px]">
 						<FullBanner image={images.banner} />
@@ -88,62 +68,7 @@ export default function Portfolio({ PortRef }) {
 								solutions that exceed expectations every time.
 							</p>
 						</section>
-						<section className="grid grid-cols-1 md:grid-cols-2 mt-12 gap-6 mb-20">
-							<PortfolioCard>
-								<section className="flex gap-x-5 mb-4">
-									<section className=" flex w-12 h-12  rounded-full primary-bg-color justify-center items-center">
-										<Icon path={path.path_3} color={path.color_white} />
-									</section>
-									<section>
-										<h4 className="text-lg primary-color mb-1 capitalize">
-											b2C excellence
-										</h4>
-										<span className="text-white text-xs block capitalize">
-											premium home solutions
-										</span>
-									</section>
-								</section>
-								<p className="text-white text-sm mb-4 leading-relaxed capitalize">
-									personalized service for discerning homeowners seeking luxury
-									furniture solutions.
-								</p>
-								<section className="rounded-[10px] border border-cyan-300  py-2 ">
-									<Button>
-										<Icon path={path.path_4} color={path.color_primary} />
-										<span className="capitalize primary-color">
-											download profile
-										</span>
-									</Button>
-								</section>
-							</PortfolioCard>
-							<PortfolioCard>
-								<section className="flex gap-x-5 mb-4">
-									<section className=" flex w-12 h-12  rounded-full primary-bg-color justify-center items-center">
-										<Icon path={path.path_5} color={path.color_white} />
-									</section>
-									<section>
-										<h4 className="text-lg primary-color mb-1 capitalize">
-											b2C leadership
-										</h4>
-										<span className="text-white text-xs block capitalize">
-											commercial & volume orders
-										</span>
-									</section>
-								</section>
-								<p className="text-white text-sm mb-4 xl:mb-10 leading-relaxed capitalize">
-									trusted by dubai's leading businesses for large-scale
-									furniture projects.
-								</p>
-								<section className="rounded-[10px] border border-cyan-300  py-2 ">
-									<Button>
-										<Icon path={path.path_6} color={path.color_primary} />
-										<span className="capitalize primary-color">
-											schedule work
-										</span>
-									</Button>
-								</section>
-							</PortfolioCard>
-						</section>
+						<PortfolioCard cards={portfolioCard} />
 					</section>
 				</section>
 				<section>

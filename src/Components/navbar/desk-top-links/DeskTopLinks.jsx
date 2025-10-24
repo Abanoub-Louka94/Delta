@@ -33,7 +33,7 @@ function List({ item, scroll, activeSection }) {
 				<motion.span
 					layoutId="activeSection"
 					className="absolute left-0 bottom-[-4px] h-[2px] primary-bg-color w-full"
-					transition={{ type: "spring", stiffness: 200, damping: 15 }}
+					transition={{ type: "spring", stiffness: 200, damping: 10 }}
 				></motion.span>
 			)}
 		</li>
