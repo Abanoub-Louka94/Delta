@@ -77,7 +77,6 @@ export default function Portfolio({ PortRef }) {
 							title={intro.title_2}
 							description={intro.description_2}
 						></Intro>
-
 						<StrengthsCard />
 					</section>
 				</section>

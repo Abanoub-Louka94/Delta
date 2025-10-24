@@ -1,9 +1,20 @@
 import Icon from "../icon/Icon";
 import { motion } from "motion/react";
-import {
-	statsContainer,
-	statsItem,
-} from "../../sections/portfolio/portfolio-js/portfolio";
+
+const statsContainer = {
+	hidden: { opacity: 0 },
+	show: {
+		opacity: 1,
+		transition: {
+			staggerChildren: 0.2,
+		},
+	},
+};
+
+const statsItem = {
+	hidden: { scale: 0, opacity: 0 },
+	show: { scale: 1, opacity: 1 },
+};
 
 export default function StatsCard({ cards }) {
 	return (

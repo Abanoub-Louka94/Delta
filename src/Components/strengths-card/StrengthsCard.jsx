@@ -1,10 +1,21 @@
 import { motion } from "motion/react";
 import Icon from "../icon/Icon";
-import {
-	item,
-	container,
-	cards,
-} from "../../sections/portfolio/portfolio-js/portfolio";
+import { strengthCards } from "../../sections/portfolio/portfolio-js/portfolio";
+
+const container = {
+	hidden: { opacity: 0 },
+	show: {
+		opacity: 1,
+		transition: {
+			staggerChildren: 0.7,
+		},
+	},
+};
+
+const item = {
+	hidden: { y: 20, opacity: 0 },
+	show: { y: 0, opacity: 1 },
+};
 
 export default function StrengthsCard() {
 	return (
@@ -15,7 +26,7 @@ export default function StrengthsCard() {
 			whileInView="show"
 			viewport={{ once: true }}
 		>
-			{cards.map((card, index) => (
+			{strengthCards.map((card, index) => (
 				<Card card={card} key={index} />
 			))}
 		</motion.section>

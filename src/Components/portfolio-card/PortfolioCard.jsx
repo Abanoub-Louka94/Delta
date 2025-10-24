@@ -6,14 +6,14 @@ const portfolioContainer = {
 	show: {
 		opacity: 1,
 		transition: {
-			staggerChildren: 0.2,
+			staggerChildren: 0.3,
 		},
 	},
 };
 
 const portfolioItem = {
-	hidden: { scale: 0, opacity: 0 },
-	show: { scale: 1, opacity: 1 },
+	hidden: { y: 10, opacity: 0 },
+	show: { y: 0, opacity: 1 },
 };
 
 export default function PortfolioCard({ cards }) {

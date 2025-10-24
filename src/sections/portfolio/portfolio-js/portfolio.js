@@ -1,5 +1,3 @@
-import { scale } from "motion";
-
 export const intro = {
 	title_1: "dubai's premier choice",
 	title_2: "our core strengths",
@@ -24,7 +22,7 @@ export const images = {
 	banner: "bg-[url(/src/assets/Portfolio/Portfolio.jpeg)]",
 };
 
-export const cards = [
+export const strengthCards = [
 	{
 		icon: {
 			shape:
@@ -63,21 +61,6 @@ export const cards = [
 	},
 ];
 
-export const container = {
-	hidden: { opacity: 0 },
-	show: {
-		opacity: 1,
-		transition: {
-			staggerChildren: 0.7,
-		},
-	},
-};
-
-export const item = {
-	hidden: { y: 20, opacity: 0 },
-	show: { y: 0, opacity: 1 },
-};
-
 export const statsCard = [
 	{
 		number: "10,000+",
@@ -99,21 +82,6 @@ export const statsCard = [
 		descrip: "years of experience",
 	},
 ];
-
-export const statsContainer = {
-	hidden: { opacity: 0 },
-	show: {
-		opacity: 1,
-		transition: {
-			staggerChildren: 0.2,
-		},
-	},
-};
-
-export const statsItem = {
-	hidden: { scale: 0, opacity: 0 },
-	show: { scale: 1, opacity: 1 },
-};
 
 export const portfolioCard = [
 	{
