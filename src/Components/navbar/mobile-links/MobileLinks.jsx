@@ -9,6 +9,8 @@ const container = {
 		exit: { opacity: 0, height: 0 },
 		transition: {
 			type: "spring",
+			stiffness: 200,
+			dumping: 15,
 			staggerChildren: 0.2, // Delay between each child animation
 		},
 	},

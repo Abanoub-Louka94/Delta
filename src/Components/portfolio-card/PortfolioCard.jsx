@@ -1,12 +1,16 @@
 import { motion } from "motion/react";
 import Button from "../button/Button";
 import Icon from "../../Components/icon/Icon";
+
 const portfolioContainer = {
 	hidden: { opacity: 0 },
 	show: {
 		opacity: 1,
 		transition: {
-			staggerChildren: 0.3,
+			staggerChildren: 0.8,
+			delay: 0.5,
+			stiffness: 100,
+			damping: 15,
 		},
 	},
 };

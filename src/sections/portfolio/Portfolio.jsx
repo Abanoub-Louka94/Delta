@@ -14,6 +14,25 @@ import {
 	portfolioCard,
 } from "./portfolio-js/portfolio";
 
+const container = {
+	hidden: { opacity: 0 },
+	show: {
+		opacity: 1,
+		transition: {
+			type: "spring",
+			delay: 0.5,
+			stiffness: 200,
+			dumping: 15,
+			staggerChildren: 0.7, // Delay between each child animation
+		},
+	},
+};
+
+const item = {
+	hidden: { y: 20, opacity: 0 },
+	show: { y: 0, opacity: 1 },
+};
+
 export default function Portfolio({ PortRef }) {
 	return (
 		<section id="portfolio" className="py-20" ref={PortRef}>
@@ -30,11 +49,28 @@ export default function Portfolio({ PortRef }) {
 				</Intro>
 				<StatsCard cards={statsCard} />
 				<section className="grid grid-cols-1 xl:grid-cols-2 mb-20 gap-16">
-					<section className="relative h-[500px] overflow-hidden rounded-[10px]">
+					<motion.section
+						className="relative h-[500px] overflow-hidden rounded-[10px]"
+						initial={{ x: -20, opacity: 0 }}
+						whileInView={{ x: 0, opacity: 1 }}
+						viewport={{ once: true }}
+						transition={{
+							duration: 1,
+							type: "spring",
+							delay: 0.5,
+							stiffness: 100,
+							damping: 15,
+						}}
+					>
 						<FullBanner image={images.banner} />
 						<motion.span
-							transition={{ duration: 1, type: "spring" }}
-							whileHover={{ rotate: "5deg", scale: 1.1 }}
+							transition={{
+								duration: 1,
+								type: "spring",
+								stiffness: 400,
+								damping: 15,
+							}}
+							whileHover={{ rotate: "7deg", scale: 1.1 }}
 							className="capitalize absolute top-6 left-6 primary-bg-color px-4 py-2 rounded-full font-medium"
 						>
 							premium quality
@@ -49,25 +85,39 @@ export default function Portfolio({ PortRef }) {
 								crafting excellence
 							</span>
 						</div>
-					</section>
+					</motion.section>
 					<section>
-						<section>
-							<h3 className="text-3xl md:text-4xl primary-color mb-6 capitalize">
+						<motion.section
+							variants={container}
+							initial="hidden"
+							whileInView="show"
+							viewport={{ once: true }}
+						>
+							<motion.h3
+								className="text-3xl md:text-4xl primary-color mb-6 capitalize"
+								variants={item}
+							>
 								the delta difference
-							</h3>
-							<p className="text-white text-lg  leading-relaxed mb-6">
+							</motion.h3>
+							<motion.p
+								className="text-white text-lg leading-relaxed mb-6"
+								variants={item}
+							>
 								While our competitors focus on volume, we focus on value. Every
 								piece that leaves our workshop is a testament to our commitment
 								to excellence, crafted with the finest materials and attention
 								to detail that has made us Dubai's premier furniture
 								manufacturer.
-							</p>
-							<p className="text-white text-lg leading-relaxed">
+							</motion.p>
+							<motion.p
+								className="text-white text-lg leading-relaxed"
+								variants={item}
+							>
 								From European ladies seeking elegant home furnishings to
 								high-end businesses requiring volume orders, we deliver
 								solutions that exceed expectations every time.
-							</p>
-						</section>
+							</motion.p>
+						</motion.section>
 						<PortfolioCard cards={portfolioCard} />
 					</section>
 				</section>
