@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import Button from "../../Components/button/Button";
 import Intro from "../../Components/section-intro/Intro";
 import Icon from "../../Components/icon/Icon";
@@ -37,9 +38,21 @@ export default function About({ aboutRef }) {
 						</section>
 					</Intro>
 					<section className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
-						<section>
+						<motion.section
+							initial={{ opacity: 0 }}
+							whileInView={{
+								opacity: 1,
+								transition: {
+									staggerChildren: 0.7,
+									stiffness: 150,
+									type: "spring",
+									damping: 10,
+								},
+							}}
+							viewport={{ once: true }}
+						>
 							<AboutCard />
-						</section>
+						</motion.section>
 						<section>
 							<Occordion />
 						</section>

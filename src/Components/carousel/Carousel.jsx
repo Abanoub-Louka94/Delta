@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import { sliders, next, prev, iconColor } from "./carousel-js/carousel";
 import { useState } from "react";
 import Icon from "../icon/Icon";
@@ -12,20 +13,23 @@ export default function Carousel() {
 		setSlide((prev) => (prev - 1 + sliders.length) % sliders.length);
 	}
 	return (
-		<section className="relative w-full lg:mx-auto lg:w-[50%] ">
+		<motion.section
+			className="relative w-full lg:mx-auto lg:w-[50%] bg-[#1a1a1a] rounded-2xl"
+			initial={{ y: 10, opacity: 0 }}
+			whileInView={{ y: 0, opacity: 1 }}
+			transition={{ delay: 0.5, stiffness: 50 }}
+			viewport={{ once: true }}
+		>
 			<section className="overflow-hidden rounded-2xl border border-cyan-300/10 hover:border-cyan-300/30 my-transition">
-				<section
-					className="flex my-transition"
-					style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+				<motion.section
+					className="flex "
+					animate={{ transform: `translateX(-${currentSlide * 100}%)` }}
+					transition={{ type: "spring", stiffness: 100 }}
 				>
 					{sliders.map((slider) => (
-						<SlideItem
-							slider={slider}
-							key={slider.name}
-							currentSlide={currentSlide}
-						/>
+						<SlideItem slider={slider} key={slider.name} />
 					))}
-				</section>
+				</motion.section>
 			</section>
 
 			<section className="absolute right-[-10px] lg:right-[-60px] top-1/2 transform -translate-y-1/2 bg-[#1a1a1a] p-2 rounded-full flex items-center border border-cyan-300">
@@ -38,19 +42,25 @@ export default function Carousel() {
 					<Icon path={prev} color={iconColor} />
 				</button>
 			</section>
-		</section>
+		</motion.section>
 	);
 }
 
 function SlideItem({ slider }) {
 	return (
-		<section className="bg-[#1a1a1a] text-white rounded-2xl p-8 md:p-12  min-w-full min-h-full">
+		<motion.section
+			className="bg-[#1a1a1a] text-white rounded-2xl p-8 md:p-12  min-w-full min-h-full"
+			initial={{ scale: 0 }}
+			whileInView={{ scale: 1 }}
+			transition={{ stiffness: 100 }}
+			viewport={{ once: true }}
+		>
 			<section className="flex justify-center items-center mb-4">
 				<Icon path={slider.qouteIcon} color={slider.iconColor} />
 			</section>
 			<section className="flex justify-center items-center mb-4">
-				{slider.starsIcon.map((star) => (
-					<Icon path={star.path} color={slider.iconColor} key={star.id} />
+				{slider.starsIcon.map((star, id) => (
+					<Icon path={star.path} color={slider.iconColor} key={id} />
 				))}
 			</section>
 			<section className="mb-4 text-center">
@@ -70,6 +80,6 @@ function SlideItem({ slider }) {
 					<p className="primary-color capitalize text-xs">{slider.location}</p>
 				</section>
 			</section>
-		</section>
+		</motion.section>
 	);
 }

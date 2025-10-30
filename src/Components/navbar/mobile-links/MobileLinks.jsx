@@ -11,7 +11,7 @@ const container = {
 			type: "spring",
 			stiffness: 200,
 			dumping: 15,
-			staggerChildren: 0.2, // Delay between each child animation
+			staggerChildren: 0.2,
 		},
 	},
 };

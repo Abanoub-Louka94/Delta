@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import Icon from "../icon/Icon";
 
 export default function ContactCards() {
@@ -30,11 +31,11 @@ export default function ContactCards() {
 	];
 
 	return (
-		<>
+		<motion.section>
 			{cards.map((card) => (
 				<section
-					key={card.title}
 					className="bg-[#1a1a1a] flex items-start p-4 rounded-lg my-transition border border-cyan-300/10 hover:border-cyan-300/30 mb-4 gap-3 hover:scale-103"
+					key={card.title}
 				>
 					<section className="bg-gradient-to-br from-cyan-300/20 to-cyan-300/20 rounded-full p-3 my-transition hover:scale-125">
 						<Icon path={card.icon} color={card.color_primary} />
@@ -46,6 +47,6 @@ export default function ContactCards() {
 					</section>
 				</section>
 			))}
-		</>
+		</motion.section>
 	);
 }

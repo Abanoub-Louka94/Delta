@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import { useState } from "react";
 import Icon from "../icon/Icon";
 import { occordionData } from "../../sections/about/about-js/about";
@@ -9,7 +10,17 @@ export default function Occordion() {
 		selected === index ? setIsSelectede(null) : setIsSelectede(index);
 	}
 	return (
-		<section className="flex flex-col  gap-y-3">
+		<motion.section
+			className="flex flex-col  gap-y-3"
+			initial={{ opacity: 0 }}
+			whileInView={{
+				opacity: 1,
+				transition: {
+					staggerChildren: 0.7,
+				},
+			}}
+			viewport={{ once: true }}
+		>
 			{occordionData.map((occ, index) => (
 				<OccordionComponent
 					data={occ}
@@ -19,13 +30,22 @@ export default function Occordion() {
 					index={index}
 				/>
 			))}
-		</section>
+		</motion.section>
 	);
 }
 
 function OccordionComponent({ data, selected, toggole, index }) {
 	return (
-		<section className="bg-[#1a1a1a] rounded-2xl border border-cyan-300/20 overflow-hidden">
+		<motion.section
+			className="bg-[#1a1a1a] rounded-2xl border border-cyan-300/20 overflow-hidden"
+			initial={{ y: 50, opacity: 0 }}
+			whileInView={{
+				y: 0,
+				opacity: 1,
+			}}
+			transition={{ delay: 0.5, duration: 0.5 }}
+			viewport={{ once: true }}
+		>
 			<section
 				className="cursor-pointer border-b border-cyan-300/10 flex-between p-4 md:p-6"
 				onClick={() => toggole(index)}
@@ -57,7 +77,7 @@ function OccordionComponent({ data, selected, toggole, index }) {
 					))}
 				</ul>
 			</section>
-		</section>
+		</motion.section>
 	);
 }
 
