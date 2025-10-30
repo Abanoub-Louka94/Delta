@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion, transform } from "motion/react";
 import Intro from "../../Components/section-intro/Intro";
 import Button from "../../Components/button/Button";
 import Icon from "../../Components/icon/Icon";
@@ -19,10 +19,6 @@ const container = {
 	show: {
 		opacity: 1,
 		transition: {
-			type: "spring",
-			delay: 0.5,
-			stiffness: 200,
-			dumping: 15,
 			staggerChildren: 0.7, // Delay between each child animation
 		},
 	},
@@ -55,9 +51,8 @@ export default function Portfolio({ PortRef }) {
 						whileInView={{ x: 0, opacity: 1 }}
 						viewport={{ once: true }}
 						transition={{
-							duration: 1,
 							type: "spring",
-							delay: 0.5,
+							delay: 1,
 							stiffness: 100,
 							damping: 15,
 						}}
@@ -65,7 +60,6 @@ export default function Portfolio({ PortRef }) {
 						<FullBanner image={images.banner} />
 						<motion.span
 							transition={{
-								duration: 1,
 								type: "spring",
 								stiffness: 400,
 								damping: 15,
