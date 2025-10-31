@@ -49,7 +49,6 @@ export default function About({ aboutRef }) {
 									damping: 10,
 								},
 							}}
-							viewport={{ once: true }}
 						>
 							<AboutCard />
 						</motion.section>

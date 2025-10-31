@@ -30,12 +30,33 @@ export default function ContactCards() {
 		},
 	];
 
+	const container = {
+		hidden: { opacity: 0 },
+		show: {
+			opacity: 1,
+			transition: {
+				staggerChildren: 0.2,
+			},
+		},
+	};
+
+	const item = {
+		hidden: { x: 50, opacity: 0 },
+		show: { x: 0, opacity: 1 },
+	};
+
 	return (
-		<motion.section>
+		<motion.section
+			variants={container}
+			initial="hidden"
+			whileInView="show"
+			viewport={{ once: true }}
+		>
 			{cards.map((card) => (
-				<section
+				<motion.section
 					className="bg-[#1a1a1a] flex items-start p-4 rounded-lg my-transition border border-cyan-300/10 hover:border-cyan-300/30 mb-4 gap-3 hover:scale-103"
 					key={card.title}
+					variants={item}
 				>
 					<section className="bg-gradient-to-br from-cyan-300/20 to-cyan-300/20 rounded-full p-3 my-transition hover:scale-125">
 						<Icon path={card.icon} color={card.color_primary} />
@@ -45,7 +66,7 @@ export default function ContactCards() {
 						<h4 className="capitalize text-white mb-2">{card.title}</h4>
 						<span className="text-white/60 text-xs block">{card.info}</span>
 					</section>
-				</section>
+				</motion.section>
 			))}
 		</motion.section>
 	);
