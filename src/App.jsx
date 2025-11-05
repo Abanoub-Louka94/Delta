@@ -49,7 +49,6 @@ function App() {
 
 	return (
 		<main>
-			<section className="fixed z-30 right-10 bottom-10 bg-cyan-300  drop-shadow-cyan-300 w-12 h-12 rounded-full"></section>
 			<Header
 				homeRef={home}
 				scroll={scrollToSections}
